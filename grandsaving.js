@@ -1,7 +1,7 @@
 var grandSavings=[
     {
-        image_url:"https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1641187637/lcfd1eufwbtituwyswpi.jpg",
-        name:"Covid Essentials",
+        image_url:"https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1645503918/o2g7kme57zu6ob9nw6vm.png",
+        name:"Zandu",
         link:"https://www.1mg.com/categories/ayurveda/top-brands/zandu-285"
     },
     {
