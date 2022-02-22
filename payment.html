@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css\payment.css" />
+  </head>
+  <body>
+    <form id="form">
+      <h3>Enter Card Details</h3>
+      <div class="nav-bar"></div>
+      <div class="all">
+        <label class="ladal">Card Number</label>
+        <input
+          type="number"
+          placeholder="Card Number"
+          id="cardnum"
+          maxlength="9"
+        />
+      </div>
+      <div>
+        <label class="ladal">Expire Date</label>
+        <div class="all" id="datediv">
+          <input
+            type="text"
+            id="month"
+            placeholder="MM"
+            maxlength="2"
+            oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+          />
+          <p id="slash">/</p>
+          <input
+            type="text"
+            id="year"
+            placeholder="YY"
+            maxlength="2"
+            oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+          />
+        </div>
+      </div>
+
+      <div class="all">
+        <label class="ladal">CVV</label>
+        <input
+          type="text"
+          id="cvv"
+          placeholder="•••"
+          maxlength="3"
+          oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+        />
+        <!-- <input type="number" placeholder="•••" id="cvv" maxlength="3" /> -->
+      </div>
+
+      <div class="all">
+        <label class="ladal">Name</label>
+        <input type="text" id="name" placeholder="Enter Cardholder's Full Name" />
+      </div>
+      <input type="submit" value="PAY" />
+    </form>
+  </body>
+</html>
+
+<script src="js\payment.js"></script>
+<script src="js\paymentdata.js"></script>
