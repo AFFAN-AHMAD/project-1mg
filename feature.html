@@ -5,37 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style> 
+    #mainCOnt {
+        width: 100%;
+        height: 800px;
+        border: red solid;
+    }
+    </style>
 </head>
 <body>
     <div id="mainCOnt">
-
     </div>
 </body>
 </html>
-<script src= "./feauturedBrand.js"></script>
-<!-- <script src = "./grandsaving.js" ></script>
-<script src="./greensupplements.js"></script>
-<script src="./popular.js"></script>
-<script src="./tata_mg.js"></script>
-<script src="./topSellers.js" ></script> -->
+<script src= "feauturedBrand.js"></script>
+<script src = "grandsaving.js" ></script>
+<script src="greensupplements.js"></script>
+<script src="popular.js"></script>
+<script src="tata_mg.js"></script>
+<script src="topSellers.js" ></script>
 <!-- featurebrand -->
 <script>
-
 var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
 console.log(featureBrand)
 featureBrand.map(function(elem,index,array)
 {
-   
     var box = document.createElement("div");
-    var img = document.createElement("img")
-    img.setAttribute("src",elem.image_url)
+    var image = document.createElement("img")
+    image.setAttribute("src",elem.image_url)
     var name = document.createElement("p")
     name.innerHTML=elem.name
-    box.append(img,name)
-    console.log(box)
+    box.append(image,name)
    
-    document.querySelector("#mainCont").append(box)
+    document.querySelector("#mainCOnt").append(box)
 })
+</script>
+
+
 
 
 

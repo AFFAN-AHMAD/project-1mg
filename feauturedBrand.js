@@ -35,9 +35,8 @@ var featureBrand = [
         name:"Contour",
         link:"https://www.1mg.com/categories/featured/top-brands/contour-268"
     }
-
-
 ]
   
+localStorage.setItem("featurebrands",JSON.stringify(featureBrand))
    
 
