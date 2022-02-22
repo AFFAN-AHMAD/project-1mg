@@ -1,0 +1,92 @@
+#container {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  /* border: red solid; */
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.innerdiv {
+    height: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+s {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7e818c;
+}
+img {
+    width: 100%;
+    /* border: red solid; */
+}
+
+#container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#container > div:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button {
+    border-radius: 5px;
+    font-size: medium;
+    border: 0px;
+}
+
+button:hover {
+    background-color: #d085f5;
+    box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+    -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+    -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+    -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+    color: wheat;
+  }
+
+#navbar {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  justify-content: space-evenly;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#navbar > button {
+  width: 20%;
+  font-weight: 600;
+  background-color: black;
+  color: aliceblue;
+}
+
+#navbar:hover {
+  height: 50px;
+}
+
+#trend {
+  margin-top: 50px;
+}
+
+#searchbar {
+  display: none;
+}
