@@ -1,47 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style> 
-    #mainCOnt {
-        width: 100%;
-        height: 800px;
-        border: red solid;
-    }
+    <style>
+      #mainCont > div{
+            border:1px solid red;
+            display:flex;
+            justify-content: space-around;
+        }
+      
+        
     </style>
-</head>
-<body>
-    <div id="mainCOnt">
+  </head>
+  <body>
+    <div id="mainCont">
+      
     </div>
-</body>
+  </body>
 </html>
-<script src= "feauturedBrand.js"></script>
-<script src = "grandsaving.js" ></script>
-<script src="greensupplements.js"></script>
-<script src="popular.js"></script>
-<script src="tata_mg.js"></script>
-<script src="topSellers.js" ></script>
-<!-- featurebrand -->
+<script src="./feauturedBrand.js"></script>
+<script src="./grandsaving.js"></script>
+<script src="./greensupplements.js"></script>
+<script src="./popular.js"></script>
+<script src="./tata_mg.js"></script>
+<script src="./topSellers.js"></script>
+<!-- featurebrand-->
 <script>
-var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
-console.log(featureBrand)
-featureBrand.map(function(elem,index,array)
-{
+  // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
+  var headingfeature = document.createElement("p");
+  headingfeature.innerText="Featured brands"
+  var featurebox = document.createElement("div")
+  featurebox.setAttribute("Id","featurebox")
+  console.log(featureBrand);
+  featureBrand.map(function (elem, index, array) {
     var box = document.createElement("div");
-    var image = document.createElement("img")
-    image.setAttribute("src",elem.image_url)
-    var name = document.createElement("p")
-    name.innerHTML=elem.name
-    box.append(image,name)
-   
-    document.querySelector("#mainCOnt").append(box)
-})
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    box.append(img, name);
+    console.log(box);
+
+    featurebox.append(box)
+  });
+  document.querySelector("#mainCont").append(headingfeature,featurebox);
+  
+</script>
+<!--  topsellers-->
+<script>
+     var headingtop = document.createElement("p");
+  headingtop.innerText="Top Sellers From MuscleBlaze"
+    console.log(Muscleblaze)
+    var topBox = document.createElement("div")
+  topBox.setAttribute("Id","topBox")
+  console.log(featureBrand);
+  Muscleblaze.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    box.append(img, name);
+    console.log(box);
+
+    topBox.append(box)
+  });
+  document.querySelector("#mainCont").append(headingtop,topBox);
 </script>
 
+<!-- popular -->
+<script>
+    
+    console.log(popularBrand)
+    var headingpopular = document.createElement("p");
+  headingpopular.innerText="Popular categories"
+    console.log(Muscleblaze)
+    var popularBox = document.createElement("div")
+  popularBox.setAttribute("Id","popularBox")
+  console.log(featureBrand);
+  popularBrand.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    box.append(img, name);
+    console.log(box);
 
+    popularBox.append(box)
+  });
+  document.querySelector("#mainCont").append(headingpopular,popularBox);
+</script>
+<!-- grandsaving-->
+<script>
+    console.log(grandSavings)
+    var headingGrand = document.createElement("p");
+  headingGrand.innerText="Grand Saving Days"
+    var GrandBox = document.createElement("div")
+  GrandBox.setAttribute("Id","GrandBox")
+  console.log(featureBrand);
+  grandSavings.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    box.append(img, name);
+    console.log(box);
+
+    GrandBox.append(box)
+  });
+  document.querySelector("#mainCont").append(headingGrand,GrandBox);
+</script>
+<!-- tatamg -->
+<script>
+    console.log(tataMg)
+    var headingTata = document.createElement("p");
+  headingTata.innerText="Tata 1mg health products"
+    var tataBox = document.createElement("div")
+  tataBox.setAttribute("Id","tataBox")
+  console.log(featureBrand);
+  tataMg.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    box.append(img, name);
+    console.log(box);
+
+    tataBox.append(box)
+  });
+  document.querySelector("#mainCont").append(headingTata,tataBox);
+</script>
+
+<!-- greensupplement -->
+<script>
+    console.log(greenSupplements)
+    var headingGreen = document.createElement("p");
+  headingGreen.innerText="Green Supplements | Supplement of the week"
+    var greenBox = document.createElement("div")
+  greenBox.setAttribute("Id","greenBox")
+  console.log(featureBrand);
+  greenSupplements.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    box.append(img, name);
+    console.log(box);
+
+    greenBox.append(box)
+  });
+  document.querySelector("#mainCont").append(headingGreen,greenBox);
+
+</script>
 
 
 
