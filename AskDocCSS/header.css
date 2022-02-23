@@ -27,7 +27,8 @@ display: flex;
 justify-content: space-around;
 }
 #loginSignup>p{
-    margin:10px
+    margin:10px;
+    
     }
 .cart{
 height:35px;

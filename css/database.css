@@ -64,12 +64,12 @@ s+p{
     border: 1px solid red
 
 }
-#featurebox .nameContainer{
+ .nameContainer{
     display: block;
     text-align: center;
 
 }
-#featurebox .nameContainer > p{
+.nameContainer > p{
    text-align: center;
    font-size: 12px;
    color:#212121;

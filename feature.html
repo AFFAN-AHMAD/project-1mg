@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="AskDocCSS\header.css" />
     <style>
 
-      #mainCont > div {
-        border: 1px solid red;
-        display: flex;
-        justify-content: space-around;
-      }
+     
     </style>
   </head>
   <body>
@@ -31,7 +27,8 @@
       </div>
       </div>
       <div id = "loginSignup"> 
-          <p style="font-size:15px;">Login | Signup</p>
+          <p style="font-size:15px;">Login  </p>
+          <p style="font-size:15px;">Signup</p>
           <p style="font-size:15px;">Offers</p>
           <i class="fa-solid fa-cart-shopping" style="margin-top:15px;font-size:25px;"></i>
           <p style="font-size:15px;">Need Help ?</p>
@@ -111,15 +108,16 @@
 
   
 
+    
+
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
     var imgContainer = document.createElement("div");
     imgContainer.setAttribute("class", "imgContainer");
     var nameContainer = document.createElement("div");
     nameContainer.setAttribute("class", "nameContainer");
 
-
-    var img = document.createElement("img");
-    img.setAttribute("src", elem.image_url);
-    var name = document.createElement("p");
     name.innerHTML = elem.name;
     imgContainer.append(img);
 
@@ -184,6 +182,10 @@
     topBox.append(box);
   });
   document.querySelector("#mainCont").append(headingtop, topBox);
+  topBox.addEventListener("click",function()
+  {
+    window.location.href="product.html"
+  })
 </script>
 
 <!-- popular -->
@@ -206,7 +208,15 @@
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    var imgContainer = document.createElement("div");
+    imgContainer.setAttribute("class", "imgContainer");
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class", "nameContainer");
+
+    
+    imgContainer.append(img);
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
     console.log(box);
 
     popularBox.append(box);
@@ -231,7 +241,13 @@
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
     console.log(box);
 
     GrandBox.append(box);
