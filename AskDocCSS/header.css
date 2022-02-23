@@ -9,8 +9,26 @@
 .navbar{
 display:flex;
 gap:25px;
+justify-content: space-between;
 }
-
+.navbar > div:first-child{
+display: flex;
+justify-content: center;
+}
+#tabs{
+    display: flex;
+    justify-content: space-around;
+}
+#tabs>p{
+    margin :10px
+}
+#loginSignup{
+display: flex;
+justify-content: space-around;
+}
+#loginSignup>p{
+    margin:10px
+    }
 .cart{
 height:35px;
 width:124px;
