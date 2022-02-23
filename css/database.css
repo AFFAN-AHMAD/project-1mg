@@ -1,4 +1,10 @@
 
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #mainCont > div{
     border:1px solid red;
     display:flex;
@@ -12,6 +18,19 @@
     margin-left:20px;
 
 
+}
+#ratediv{
+    display:flex;
+    justify-content: center;
+    width:120px
+}
+
+#ratediv >s{
+    font-size: 12px;
+    margin:15px 10px
+}
+s+p{
+    font-size: 12px;
 }
 #featurebox {
  
@@ -60,16 +79,22 @@
 
 /* topBox stylying*/
 #topBox{
-    height:346px;
+    height:300px;
     margin:auto;
     /* background-color: aqua; */
 }
+
 #topBox >div{
 
     height:auto;
     width:auto;
     margin: 0px 20px;
+    border-radius: 10px;
 }
+#topBox >div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
 #topBox .imgContainer{
     text-align: center;
 }
@@ -102,3 +127,15 @@
    
 }
    
+.nameContainer+p{
+    text-align: center;
+    margin-top: -2px;
+    margin-bottom: -5px;
+    color: #b9b9b9;
+    font-size: 12px;
+}
+#ratediv+h5{
+    text-align: center;
+    font-size: 14px;
+    margin-top: -1px;
+}

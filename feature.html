@@ -159,8 +159,26 @@
     var name = document.createElement("p");
     name.innerHTML = elem.name;
     imgContainer.append(img);
-    nameContainer.append(name)
-    box.append(imgContainer, nameContainer);
+    nameContainer.append(name);
+
+    var desc =document.createElement("p");
+    desc.innerText=elem.desc
+
+    var ratediv = document.createElement("div")
+   
+   ratediv.setAttribute("ID","ratediv")
+    var mrptag = document.createElement("p")
+    mrptag.innerText = "MRP"
+    mrptag.style.fontSize="12px"
+    var mrp  = document.createElement("s")
+    
+    mrp.innerText = elem.mrp
+    var discount = document.createElement("p")
+    discount.innerText=elem.off+" "+"off"
+    ratediv.append(mrptag,mrp , discount)
+    var price = document.createElement("h5")
+    price.innerText=elem.price
+    box.append(imgContainer, nameContainer,desc,ratediv,price);
     console.log(box);
 
     topBox.append(box);
