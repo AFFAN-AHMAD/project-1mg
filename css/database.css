@@ -1,0 +1,16 @@
+.productList{
+    font-size: 18px;
+    color:#212121;
+    font-family: Arial, Helvetica, sans-serif ;
+   
+}
+#featurebox > .imgContainer{
+    margin: auto;
+    display: block;
+    height:120px;
+    background-color: aqua;
+}
+#featurebox > .imgContainer >img{
+    height:100%;
+    width:100%;
+}
