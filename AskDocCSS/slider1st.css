@@ -1,0 +1,142 @@
+     * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+      }
+
+      .slider1_div {
+          background-color: #f8f8f8;
+      }
+
+      .slider_heading {
+        height: 64.86px;
+        color: #939393;
+        font-size: 24px;
+        padding-left: 6%;
+        padding-top: 2%;
+      }
+      
+      .mySlides1 {
+        display: none;
+      }
+      /* img {vertical-align: middle;} */
+
+      /* Slideshow container */
+      .slideshow-container1 {
+        height: 200px;
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        border: transparent solid;
+      }
+
+      /* Next & previous buttons */
+      .prev1,
+      .next1 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #ff6f61;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next1 {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      /* .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      } */
+
+      /* Caption text */
+      .text1 {
+        color: #757575;
+        font-size: 18px;
+        padding: 8px 40px;
+        font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        /* position: absolute; */
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        /* grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto; */
+        /* border: red solid; */
+      }
+
+      /* The dots/bullets/indicators */
+      .dot1 {
+        cursor: pointer;
+        height: 5px;
+        width: 5px;
+        margin: 0 10px;
+        margin-bottom: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #3E3E3E;
+      }
+
+      /* Fading animation */
+      .fade1 {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev1,
+        .next1,
+        .text1 {
+          font-size: 11px;
+        }
+      }
+
+      .text1 {
+          gap:  70px;
+      }
+
+      .names1 {
+        font-size: 14px;
+        color: #212121;
+        padding-top: 22px;
+        display: block;
+      }
