@@ -57,20 +57,29 @@
 </script>
 <!--  topsellers-->
 <script>
-     var headingtop = document.createElement("p");
-     headingtop.setAttribute("class","productList")
-  headingtop.innerText="Top Sellers From MuscleBlaze"
+    var headingtop = document.createElement("p");
+    headingtop.setAttribute("class","productList")
+    headingtop.innerText="Top Sellers From MuscleBlaze"
     console.log(Muscleblaze)
     var topBox = document.createElement("div")
-  topBox.setAttribute("Id","topBox")
-  console.log(featureBrand);
-  Muscleblaze.map(function (elem, index, array) {
+    topBox.setAttribute("Id","topBox")
+   
+    console.log(featureBrand);
+    Muscleblaze.map(function (elem, index, array) {
     var box = document.createElement("div");
+    
+    var imgContainer = document.createElement("div")
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class","nameContainer")
+
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    imgContainer.append(img);
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
     console.log(box);
 
     topBox.append(box)
