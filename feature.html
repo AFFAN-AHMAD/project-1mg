@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/database.css" />
     <style>
-      #mainCont > div{
-            border:1px solid red;
-            display:flex;
-            justify-content: space-around;
-        }
+     
       
         
     </style>
@@ -21,27 +18,36 @@
     </div>
   </body>
 </html>
-<script src="./feauturedBrand.js"></script>
-<script src="./grandsaving.js"></script>
-<script src="./greensupplements.js"></script>
-<script src="./popular.js"></script>
-<script src="./tata_mg.js"></script>
-<script src="./topSellers.js"></script>
+<script src="./database/feauturedBrand.js"></script>
+<script src="./database/grandsaving.js"></script>
+<script src="./database/greensupplements.js"></script>
+<script src="./database/popular.js"></script>
+<script src="./database/tata_mg.js"></script>
+<script src="./database/topSellers.js"></script>
 <!-- featurebrand-->
 <script>
   // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
   var headingfeature = document.createElement("p");
+  headingfeature.setAttribute("class","productList")
   headingfeature.innerText="Featured brands"
   var featurebox = document.createElement("div")
   featurebox.setAttribute("Id","featurebox")
-  console.log(featureBrand);
+
   featureBrand.map(function (elem, index, array) {
+
     var box = document.createElement("div");
+    var imgContainer = document.createElement("div")
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class","nameContainer")
+
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    imgContainer.append(img);
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
     console.log(box);
 
     featurebox.append(box)
@@ -52,6 +58,7 @@
 <!--  topsellers-->
 <script>
      var headingtop = document.createElement("p");
+     headingtop.setAttribute("class","productList")
   headingtop.innerText="Top Sellers From MuscleBlaze"
     console.log(Muscleblaze)
     var topBox = document.createElement("div")
@@ -76,6 +83,7 @@
     
     console.log(popularBrand)
     var headingpopular = document.createElement("p");
+    headingpopular.setAttribute("class","productList")
   headingpopular.innerText="Popular categories"
     console.log(Muscleblaze)
     var popularBox = document.createElement("div")
@@ -98,6 +106,7 @@
 <script>
     console.log(grandSavings)
     var headingGrand = document.createElement("p");
+    headingGrand.setAttribute("class","productList")
   headingGrand.innerText="Grand Saving Days"
     var GrandBox = document.createElement("div")
   GrandBox.setAttribute("Id","GrandBox")
@@ -119,6 +128,7 @@
 <script>
     console.log(tataMg)
     var headingTata = document.createElement("p");
+    headingTata.setAttribute("class","productList")
   headingTata.innerText="Tata 1mg health products"
     var tataBox = document.createElement("div")
   tataBox.setAttribute("Id","tataBox")
@@ -141,6 +151,7 @@
 <script>
     console.log(greenSupplements)
     var headingGreen = document.createElement("p");
+    headingGreen.setAttribute("class","productList")
   headingGreen.innerText="Green Supplements | Supplement of the week"
     var greenBox = document.createElement("div")
   greenBox.setAttribute("Id","greenBox")

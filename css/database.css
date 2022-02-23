@@ -1,0 +1,16 @@
+#mainCont > div{
+    border:1px solid red;
+    display:flex;
+    justify-content: space-around;
+}
+.productList{
+    font-size: 18px;
+    color:#212121;
+    font-family: Arial, Helvetica, sans-serif ;
+   
+}
+
+#featurebox #imgContainer{
+    height:120px;
+    width:120px
+}
