@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/database.css" />
+
+
     <link rel="stylesheet" href="AskDocCSS\header.css" />
     <style>
-<<<<<<< Updated upstream
+
       #mainCont > div {
         border: 1px solid red;
         display: flex;
@@ -18,83 +20,8 @@
   </head>
   <body>
     <div id="mainCont"></div>
-=======
-      #mainCont > div{
-       
-            border:1px solid red;
-            display:flex;
-            justify-content: space-around;
-            margin:auto;
-        }
-       
-      
-        
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="TATA 1mg" class="CLogo">
-      <p style="font-weight:bold;font-family:Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;">MEDICINES</p>
-      <p style="font-weight:bold;font-family:Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;">LAB TESTS <button style="background-color:#ff6f61;color:white;font-weight:bolder;border:none;border-radius:5px;">SAFE</button></p>
-      <p style="font-weight:bold;font-family:Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;">ASK DOCTOR</p>
-      <p style="font-weight:bold;font-family:Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;">COVID-19</p>
-      <p style="font-weight:bold;font-family:Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;">AYURVEDA</p>
-      <p style="font-weight:bold;font-family:Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;">CARE PLAN <button style="background-color:#ff6f61;color:white;font-weight:bolder;border:none;border-radius:5px;">SAVE MORE</button></p>
-      <p style="font-size:15px;">Login | Signup</p>
-      <p style="font-size:15px;">Offers</p>
-      <i class="fa-solid fa-cart-shopping" style="margin-top:15px;font-size:25px;"></i>
-      <p style="font-size:15px;">Need Help ?</p>
-  </div>
-  <hr style="border:none;height:1px;background:#f8f5f5;">
-  <div class="navbar1">
-      <input type="text" placeholder="Kolkata" style="height:30px;font-weight:bolder;background-color:#F1F4F6;border:none;">
-      <input type="text" placeholder="Search for Medicines and Health Products" style="width:360px;font-weight:bolder;background-color:#F1F4F6;border:none;">
-  </div>
-  <div class="navbar11">
-      <i class="fa-solid fa-bolt" style="margin-top:20px;"></i>
-      <p>QUICK BUY! Flat 25% off on medicines* </p>
-      <button>Upload</button>
-  </div>
-  <hr style="border:none;height:1px;background:#f8f5f5;">
-  <div class="selec">
-      <select style="border:none;color:#212121;">
-          <option>Health Resource Center</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Covid Essentials</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Featured</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Vitamins & Nutrition</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Diabetes</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Healthcare Devices</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Personal Care</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Health Conditions</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Ayurveda Products</option>
-      </select>
-      <select style="border:none;color:#212121;">
-          <option>Homeopathy</option>
-      </select>
-  </div>
-  <hr style="border:none;height:1px;background:#dfd5d5;">
-  <img src="https://onemg.gumlet.io/image/upload/v1625061044/marketing/bjlo9q3qyxkh7bkhypiz.png" alt="ad" style="width:1354px">
-  
-    <div id="mainCont">
-      
-    </div>
->>>>>>> Stashed changes
+
+    
   </body>
 </html>
 <script src="./database/feauturedBrand.js"></script>
@@ -107,24 +34,36 @@
 <script>
   // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
   var headingfeature = document.createElement("p");
-  headingfeature.setAttribute("class", "productList");
-  headingfeature.innerText = "Featured brands";
-  var featurebox = document.createElement("div");
-  featurebox.setAttribute("Id", "featurebox");
+
+  headingfeature.setAttribute("class","productList")
+  headingfeature.innerText="Featured brands"
+  var featurebox = document.createElement("div")
+  featurebox.setAttribute("Id","featurebox")
+
+
+
 
   featureBrand.map(function (elem, index, array) {
+
     var box = document.createElement("div");
+
+  
+
     var imgContainer = document.createElement("div");
     imgContainer.setAttribute("class", "imgContainer");
     var nameContainer = document.createElement("div");
     nameContainer.setAttribute("class", "nameContainer");
+
 
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
     imgContainer.append(img);
+
+
     nameContainer.append(name);
+
     box.append(imgContainer, nameContainer);
     console.log(box);
 
@@ -134,6 +73,9 @@
 </script>
 <!--  topsellers-->
 <script>
+
+  
+
   var headingtop = document.createElement("p");
   headingtop.setAttribute("class", "productList");
   headingtop.innerText = "Top Sellers From MuscleBlaze";
@@ -142,12 +84,21 @@
   topBox.setAttribute("Id", "topBox");
   console.log(featureBrand);
   Muscleblaze.map(function (elem, index, array) {
+
     var box = document.createElement("div");
+    
+    var imgContainer = document.createElement("div")
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class","nameContainer")
+
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    imgContainer.append(img);
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
     console.log(box);
 
     topBox.append(box);
@@ -157,6 +108,9 @@
 
 <!-- popular -->
 <script>
+    
+    
+
   console.log(popularBrand);
   var headingpopular = document.createElement("p");
   headingpopular.setAttribute("class", "productList");
@@ -164,6 +118,7 @@
   console.log(Muscleblaze);
   var popularBox = document.createElement("div");
   popularBox.setAttribute("Id", "popularBox");
+
   console.log(featureBrand);
   popularBrand.map(function (elem, index, array) {
     var box = document.createElement("div");
@@ -180,12 +135,15 @@
 </script>
 <!-- grandsaving-->
 <script>
+
+
   console.log(grandSavings);
   var headingGrand = document.createElement("p");
   headingGrand.setAttribute("class", "productList");
   headingGrand.innerText = "Grand Saving Days";
   var GrandBox = document.createElement("div");
   GrandBox.setAttribute("Id", "GrandBox");
+
   console.log(featureBrand);
   grandSavings.map(function (elem, index, array) {
     var box = document.createElement("div");
@@ -202,12 +160,15 @@
 </script>
 <!-- tatamg -->
 <script>
+<<
+
   console.log(tataMg);
   var headingTata = document.createElement("p");
   headingTata.setAttribute("class", "productList");
   headingTata.innerText = "Tata 1mg health products";
   var tataBox = document.createElement("div");
   tataBox.setAttribute("Id", "tataBox");
+
   console.log(featureBrand);
   tataMg.map(function (elem, index, array) {
     var box = document.createElement("div");
@@ -225,12 +186,15 @@
 
 <!-- greensupplement -->
 <script>
+
+
   console.log(greenSupplements);
   var headingGreen = document.createElement("p");
   headingGreen.setAttribute("class", "productList");
   headingGreen.innerText = "Green Supplements | Supplement of the week";
   var greenBox = document.createElement("div");
   greenBox.setAttribute("Id", "greenBox");
+
   console.log(featureBrand);
   greenSupplements.map(function (elem, index, array) {
     var box = document.createElement("div");
