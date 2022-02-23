@@ -1,3 +1,4 @@
+
 #mainCont > div{
     border:1px solid red;
     display:flex;
@@ -7,7 +8,12 @@
     font-size: 18px;
     color:#212121;
     font-family: Arial, Helvetica, sans-serif ;
+
     margin-left:20px
+
+   
+    background-color: aqua;
+
 }
 #featurebox {
  
@@ -36,7 +42,10 @@
 }
 #featurebox .imgContainer > img{
     height:100%;
-    width:100%
+
+    width:100%;
+    border: 1px solid red
+
 }
 #featurebox .nameContainer{
     display: block;

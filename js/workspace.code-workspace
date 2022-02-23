@@ -1,0 +1,31 @@
+{
+  "folders": [
+	{
+		"path": "..\\.."
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\Live"
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\DOM III\\DOM III"
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\todo list template"
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\contact-form-v9\\ContactFrom_v9"
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\login-form-20\\login-form-20"
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\Local storage"
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\todo list template 2\\Shop"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Web 16"
+  }
+}
