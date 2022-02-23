@@ -199,8 +199,16 @@ a {
     background-position: 0 -189px;
     width: 136px;
     height: 41px;
-    background: url() no-repeat;
+    /* image src changed */
+    background: url(https://cdn.shopify.com/s/files/1/0439/5456/9367/files/1.png?v=1602914357) no-repeat;
     margin-bottom: 12px;
+}
+
+.apple_store {
+    background-position: 0 -100px;
+    width: 136px;
+    height: 47px;
+    background: url(https://cdn.shopify.com/s/files/1/0439/5456/9367/files/2_1.png?v=1602914345) no-repeat;
 }
 
 .auth-bar {
