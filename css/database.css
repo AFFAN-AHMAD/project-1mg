@@ -1,7 +1,10 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+#mainCont{
+    margin: auto;
+    margin-right: 20px;
+}
 #mainCont > div{
   
     display:flex;
@@ -12,7 +15,7 @@
     color:#212121;
     font-family: Arial, Helvetica, sans-serif ;
 
-    margin-left:20px;
+    /* margin-left:20px; */
 
 
 }
@@ -34,21 +37,23 @@ s+p{
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto;
   gap: 0px;
+  box-sizing: border-box;
 }
 #featurebox > div {
   border-radius: 10px;
+  
+  text-align: center;
 }
 
 #featurebox .imgContainer {
   display: flex;
   flex-direction: row;
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 160px;
 }
 
 #featurebox > div:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #featurebox .imgContainer > img {
   height: 100%;
@@ -71,7 +76,7 @@ s+p{
 
 
 #topBox{
-    height:346px;
+    height:300px;
     margin:auto;
     /* background-color: aqua; */
 }
@@ -82,17 +87,19 @@ s+p{
     width:auto;
     margin: 0px 20px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 #topBox >div:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #topBox .imgContainer{
     text-align: center;
+    width:130px
 }
 #topBox .imgContainer > img {
   height: 165px;
-  width: 100px;
+  width:120px;
   margin: auto;
 }
 
@@ -109,9 +116,24 @@ s+p{
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  
 }
-
-#topBox .nameContainer > p {
+#topBox .nameContainer p{
+    font-size: 16px;
+   
+}
+#topBox .nameContainer+p{
+  font-size: 13px;
+  margin:-1px;
+  color:grey;
+  margin-bottom:-2px
+}
+#topBox h5{
+    text-align: center;
+    margin-top:-2px;
+    font-size: 14px;
+}
+#topBox p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #212121;
@@ -125,17 +147,19 @@ s+p{
   }
   #GrandBox > div {
     border-radius: 10px;
+    height:130px;
+    width: 120px;
+    text-align: center;
   }
-  
+
+   #GrandBox > div img {
+    height:100%;
+    width:100%
+  }
   
   #GrandBox > div:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-  #GrandBox .imgContainer > img {
-    height:130px;
-    width: 100%;
-    
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+  
   }
  
 
@@ -144,7 +168,7 @@ s+p{
     height:220px;
     margin:auto;
     /* background-color: aqua; */
-}
+    }
 
 #tataBox >div{
 
@@ -154,7 +178,7 @@ s+p{
     border-radius: 10px;
 }
 #tataBox >div:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #tataBox .imgContainer{
@@ -199,7 +223,7 @@ s+p{
     border-radius: 10px;
 }
 #greenBox >div:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #greenBox .imgContainer{

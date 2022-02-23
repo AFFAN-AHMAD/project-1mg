@@ -8,6 +8,7 @@
 
 .navbar{
 display:flex;
+margin:0px 25px;
 gap:25px;
 justify-content: space-between;
 }
@@ -37,6 +38,7 @@ width:124px;
 
 .navbar1{
 display:flex;
+margin-left: 35px;
 gap: 4px;
 }
 
