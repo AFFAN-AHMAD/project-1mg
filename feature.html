@@ -272,7 +272,14 @@
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
+
     console.log(box);
 
     tataBox.append(box);
@@ -298,7 +305,13 @@
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
     name.innerHTML = elem.name;
-    box.append(img, name);
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
     console.log(box);
 
     greenBox.append(box);
