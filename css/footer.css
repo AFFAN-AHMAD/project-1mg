@@ -322,6 +322,11 @@
      height:50px;
      background-color: whitesmoke;
  }
+#summary{
+    margin:auto;
+    margin-left: -1px;
+    width:95%
+}
  #summaryHead{
     font-weight: 600;
     color: #1a1a1a;
