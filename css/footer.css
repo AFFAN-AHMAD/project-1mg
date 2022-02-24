@@ -199,8 +199,15 @@
      background-position: 0 -189px;
      width: 136px;
      height: 41px;
-     background: url() no-repeat;
+     background: url(https://cdn.shopify.com/s/files/1/0439/5456/9367/files/1.png?v=1602914357) no-repeat;
      margin-bottom: 12px;
+ }
+ 
+ .apple_store {
+     background-position: 0 -100px;
+     width: 136px;
+     height: 47px;
+     background: url(https://cdn.shopify.com/s/files/1/0439/5456/9367/files/2_1.png?v=1602914345) no-repeat;
  }
  
  .auth-bar {
@@ -318,30 +325,34 @@
      opacity: .6;
      margin: 12px;
  }
- #border{
-     height:50px;
+ 
+ #border {
+     height: 50px;
      background-color: whitesmoke;
  }
-#summary{
-    margin:auto;
-    margin-left: -1px;
-    width:95%
-}
- #summaryHead{
-    font-weight: 600;
-    color: #1a1a1a;
-    display: block;
+ 
+ #summary {
+     margin: auto;
+     margin-left: -1px;
+     width: 95%
  }
- .contentHead{
-    font-size: 14px;
-    font-weight: 600;
-    color: #1a1a1a;
-    display: block;
+ 
+ #summaryHead {
+     font-weight: 600;
+     color: #1a1a1a;
+     display: block;
  }
- .content{
-    color: #666;
-    line-height: 1.42857143;
-    display: block;
-    text-align: justify;
-
+ 
+ .contentHead {
+     font-size: 14px;
+     font-weight: 600;
+     color: #1a1a1a;
+     display: block;
+ }
+ 
+ .content {
+     color: #666;
+     line-height: 1.42857143;
+     display: block;
+     text-align: justify;
  }
