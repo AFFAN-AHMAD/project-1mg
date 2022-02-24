@@ -1,261 +1,150 @@
-var mensData = [
+var Muscleblaze=[
   {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg.plp",
-    name: "MEN'S REEBOK RUNNING ROADMAP SHOES",
-    price: 1170,
-    strikedoffprice: 2599,
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600202758/cropped/n4ucau55t2b6uh7vxcbz.png",
+      name:"MuscleBlaze Whey Gold Whey Protein Isolate Only Powder Rich Milk Chocolate" ,
+      link:"https://www.1mg.com/otc/muscleblaze-whey-gold-whey-protein-isolate-only-powder-rich-milk-chocolate-otc353248",
+      desc:"jar of 1 kg",
+      mrp:7149,
+      off:"17%",
+      price:5899,
   },
   {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX3921/reebok_EX3921_1.jpg.plp",
-    name: "MEN'S REEBOK SWIM ARUBA FLIP SLIPPERS ",
-    price: 699,
-    strikedoffprice: 999,
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600155152/cropped/k6nj6qz8wvdv0u6pgztt.png",
+      name: "MuscleBlaze MB Mass Gainer XXL Chocolate",
+      link:"https://www.1mg.com/otc/muscleblaze-mb-mass-gainer-xxl-chocolate-otc328743",
+      desc:"jar of 1 kg",
+      mrp:1429,
+      off:"23%",
+      price:1099
   },
   {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX4160/reebok_EX4160_1.jpg.plp",
-    name: " MEN'S REEBOK RUNNING AUSTIN SHOES",
-    price: 945,
-    strikedoffprice: 2099,
+      image_url: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600159650/cropped/mjjil9vgcysuadxxwbqy.png",
+      name:"MuscleBlaze Whey Energy with Digezyme Whey &amp; Multivitamins Blend Powder Chocolate",
+      link:"https://www.1mg.com/otc/muscleblaze-whey-energy-with-digezyme-whey-multivitamins-blend-powder-chocolate-otc328751",
+      desc:"jar of 1 kg",
+      mrp:2299,
+      off:"21%",
+      price:1799
   },
   {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FV8798/MEN_SWIM_SLIPPERS_FV8798_1.jpg.plp",
-    name: "MEN'S REEBOK SWIM AVENGER FLIP LP SLIPPERS",
-    price: 399,
-    strikedoffprice: 799,
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600202766/cropped/rvpthfcm8tnlpr4s3hmd.png",
+      name: "MuscleBlaze Whey Gold Whey Protein Isolate Only Powder Rich Milk Chocolate",
+      link:"https://www.1mg.com/otc/muscleblaze-whey-gold-whey-protein-isolate-only-powder-rich-milk-chocolate-otc353245",
+      desc:"jar of 1 kg",
+      mrp:3849,
+      off:"22%",
+      price:2999 
   },
   {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EW5173/reebok_EW5173_1.jpg.plp",
-    name: "MEN'S REEBOK RUNNING TEMPO SHOES ",
-    price: 1620,
-    strikedoffprice: 3599,
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640260929/vi1egyox0b02bvn5k1ay.jpg" ,
+      name:"MuscleBlaze MB Super Gainer XXL Chocolate" ,
+      link:"https://www.1mg.com/otc/muscleblaze-mb-super-gainer-xxl-chocolate-otc353194",
+      desc:"jar of 1 kg",
+      mrp:2749,
+      off:"34%",
+      price:1799
   },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FV7329/reebok_FV7329_1.jpg.plp ",
-    name: " MEN'S REEBOK RUNNING ASTRO BOOSTER SHOES ",
-    price: 1440,
-    strikedoffprice: 3199,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-GD8567/MEN_TRAINING_PANTS_GD8567_1.jpg.plp ",
-    name: " MEN'S TRAINING WORKOUT READY ELITAGE PANTS ",
-    price: 1999,
-    strikedoffprice: 3199,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-GQ8758/reebok_GQ8758_1.jpg.plp ",
-    name: "MEN'S REEBOK TRAINING  POLO T-SHIRTS TEE  ",
-    price: 769,
-    strikedoffprice: 1099,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-GP7180/reebok_GP7180_1.jpg.plp",
-    name: "MEN'S REEBOK TRAINING WORKOUT  TEE  ",
-    price: 1299,
-    strikedoffprice: 1440,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX3924/reebok_EX3924_1.jpg.plp ",
-    name: "MEN'S REEBOK SUPER SOFT FLIP SLIPPERS",
-    price: 699,
-    strikedoffprice: 999,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FW0343/reebok_FW0343_1.jpg.plp ",
-    name: "MEN'S REEBOK RUNNING RUN SHOES  ",
-    price: 1620,
-    strikedoffprice: 3599,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX4285/reebok_EX4285_1.jpg.plp ",
-    name: "MEN'S REEBOK RUNNING GENESIS RUNNER SHOES  ",
-    price: 1620,
-    strikedoffprice: 3599,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FV9519/MEN_SWIM_SLIPPERS_FV9519_1.jpg.plp ",
-    name: "MEN'S REEBOK SWIM RUSSLE FLIP SLIPPERS  ",
-    price: 599,
-    strikedoffprice: 999,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ",
-    name: " MEN'S REEBOK RUNNING TREND RUNNER SHOES",
-    price: 1575,
-    strikedoffprice: 3499,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp ",
-    name: "UNISEX REEBOK RUNNING ZIG KINETICA II SHOES  ",
-    price: 9999,
-    strikedoffprice: 12000,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-GK9170/reebok_GK9170_1.jpg.plp ",
-    name: " MEN'S REEBOK TRAINING BAS POLO TEE ",
-    price: 779,
-    strikedoffprice: 1299,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-GK9175/reebok_GK9175_1.jpg.plp",
-    name: "MEN'S REEBOK TRAINING FOUNDATION  PANTS  ",
-    price: 1019,
-    strikedoffprice: 1699,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-GK9176/reebok_GK9176_1.jpg.plp ",
-    name: "MEN'S REEBOK TRAINING FOUNDATION PANTS  ",
-    price: 1019,
-    strikedoffprice: 1699,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ",
-    name: " MEN'S REEBOK RUNNING TREND SHOES",
-    price: 1575,
-    strikedoffprice: 3499,
-  },
-  {
-    image_url:
-      " https://content.shop4reebok.com/static/Product-G57776/reebok_G57776_1.jpg.plp ",
-    name: "  MEN'S REEBOK RUNNING ZTAUR RUN SHOES ",
-    price: 3499,
-    strikedoffprice: 4999,
-  },
-  {
-    image_url:
-      " https://content.shop4reebok.com/static/Product-FV9555/MEN_SWIM_SLIPPERS_FV9555_1.jpg.plp  ",
-    name: "MEN'S REEBOK SWIM ULTRA FLIP SLIPPERS   ",
-    price: 749,
-    strikedoffprice: 1499,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX3994/reebok_EX3994_1.jpg.plp   ",
-    name: "  MEN'S REEBOK SWIM FLEX CONNECT SANDALS ",
-    price: 1149,
-    strikedoffprice: 2299,
-  },
-  {
-    image_url:
-      " https://content.shop4reebok.com/static/Product-EX4287/reebok_EX4287_1.jpg.plp  ",
-    name: " MEN'S REEBOK RUNNING GENESIS RUNNER SHOE  ",
-    price: 1620,
-    strikedoffprice: 3599,
-  },
-  {
-    image_url:
-      " https://content.shop4reebok.com/static/Product-GK9180/reebok_GK9180_1.jpg.plp  ",
-    name: " MEN'S REEBOK TRAINING RUNNER SHORTS  ",
-    price: 779,
-    strikedoffprice: 1299,
-  },
-  {
-    image_url:
-      " https://content.shop4reebok.com/static/Product-HB5732/reebok_HB5732_1.jpg.plp  ",
-    name: " MEN REEBOK CLASSICS TRACKSUIT HOODIE  ",
-    price: 3499,
-    strikedoffprice: 4999,
-  },
-  {
-    image_url:
-      " https://content.shop4reebok.com/static/Product-HB5733/reebok_HB5733_1.jpg.plp  ",
-    name: "MEN'S REEBOK CLASSIC TRACKSUIT GOLF HOODIE   ",
-    price: 3499,
-    strikedoffprice: 4999,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FQ5364/reebok_FQ5364_1.jpg.plp   ",
-    name: " UNISEX REEBOK TRAINING ACTIVE  BAG ",
-    price: 1399,
-    strikedoffprice: 2799,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ",
-    name: " MEN'S REEBOK RUNNING TREND RUNNER SHOES",
-    price: 1575,
-    strikedoffprice: 3499,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-G57705/reebok_G57705_1.jpg.plp",
-    name: "UNISEX REEBOK CLASSICS  BASKETBALL SHOES",
-    price: 3919,
-    strikedoffprice: 5599,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FW0344/reebok_FW0344_1.jpg.plp",
-    name: "MEN'S REEBOK RUNNING RUN FUSION  SHOES",
-    price: 1620,
-    strikedoffprice: 3599,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-EX4272/reebok_EX4272_1.jpg.plp",
-    name: "MEN'S REEBOK RUNNING QUICK DRIFTER SHOES",
-    price: 1620,
-    strikedoffprice: 3599,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-H02293/reebok_H02293_1.jpg.plp",
-    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
-    price: 7599,
-    strikedoffprice: 9999,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-FV9551/MEN_SWIM_SLIPPERS_FV9551_1.jpg.plp",
-    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
-    price: 909,
-    strikedoffprice: 1299,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-HC3528/reebok_HC3528_1.jpg.plp",
-    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
-    price: 779,
-    strikedoffprice: 1299,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-HF3794/reebok_HF3794_01.JPG.plp ",
-    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
-    price: 1749,
-    strikedoffprice: 2499,
-  },
-  {
-    image_url:
-      "https://content.shop4reebok.com/static/Product-HG5456/reebok_HG5456_1.jpg.plp",
-    name: "MEN'S REEBOK FITNESS TRAINING  SWEATSHIRT",
-    price: 1079,
-    strikedoffprice: 1799,
-  },
-];
 
-mensData.map(function(elem){
-  elem.brand = "Menswear";
-})
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600610775/cropped/js7dckybnnewex421qfw.png",
+      name:"MuscleBlaze MB Beginner's Whey Protein Concentrate Powder Chocolate" ,
+      link:"https://www.1mg.com/otc/muscleblaze-mb-beginner-s-whey-protein-concentrate-powder-chocolate-otc484468",
+      desc:"jar of 1 kg",
+      mrp:1999,
+      off:"40%",
+      price:1199
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600611609/cropped/rknx3iszt8wwkpttv3lx.png",
+      name:"MuscleBlaze MB Super Gainer XXL Chocolate",
+      link:"https://www.1mg.com/otc/muscleblaze-mb-super-gainer-xxl-chocolate-otc484764",
+      desc:"jar of 1 kg",
+      mrp:5839,
+      off:"36%",
+      price:3699
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1611904490/wvtdk81xop6sp2v3zzpu.jpg" ,
+      name:"MuscleBlaze Fish Oil Gold Soft Gelatin Capsule",
+      link:"",
+      desc:"bottle of 60 soft gelatin capsules",
+      mrp:999,
+      off:"23%",
+      price:769,
 
-localStorage.setItem("mensData", JSON.stringify(mensData));
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1625168007/tgjhngjc3cdn250aeubx.jpg" ,
+      name:"MuscleBlaze Phirse Zidd Kar Shaker White",
+      link:"",
+      desc:"box of 650 shaker",
+      mrp:449,
+      off:"60%",
+      price:199,
 
+  },
+  {
+      image_url: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1618577735/zn3k13in9bgnjiqtsxz8.jpg" ,
+      name:"MuscleBlaze MB Protein Peanut Butter",
+      link:"",
+      desc:"jar of 750gm butter",
+      mrp:499,
+      off:"10%",
+      price:449,
+
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1611582635/dbb7zdk6lebntc7o9hcf.jpg" ,
+      name:"MuscleBlaze Tribulus Gokshura 1000mg Tablet",
+      link:"",
+      desc:"bottle of 60 tablets",
+      mrp:339,
+      off:"25%",
+      price:299,
+
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1603285643/tkbr3scqljabo5g92kcs.jpg" ,
+      name:"MuscleBlaze Unflavoured MB Fuel One Whey Protein Immunity+",
+      link:"",
+      desc:"packet of 1kg powder",
+      mrp:1899,
+      off:"5%",
+      price:1799,
+
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1611582768/ube3uqukwv30fa3svabm.jpg",
+      name:"MuscleBlaze Biozyme Whey Isolate Powder Ice Cream Chocolate",
+      link:"",
+      desc:"jar of 2kg powder",
+      mrp:4949,
+      off:"11%",
+      price:4399,
+
+  },
+  {
+      image_url: src="https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1641826437/zsx1itotu8qtxofezmad.jpg",
+      name:"MuscleBlaze MB Protein Peanut Butter Dark Chocolate",
+      link:"",
+      desc:"jar of 2.5kg butter",
+      mrp:1500,
+      off:"5%",
+      price:1420,
+
+  },
+  {
+      image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1602853967/jtzhgvyvguichv2i8uyv.jpg",         name:"MuscleBlaze Liquid L-Carnitine Lemon Lime",
+      link:"",
+      desc:"bottle of 450ml liquid",
+      mrp:1079,
+      off:"26%",
+      price:799,
+
+  },
+  
+]
+
+
+
+localStorage.setItem("mensData", JSON.stringify(Muscleblaze));

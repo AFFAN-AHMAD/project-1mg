@@ -1,3 +1,6 @@
+#mainCont{
+  display: flex;
+}
 #container {
   width: 90%;
   margin: auto;

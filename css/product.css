@@ -1,0 +1,16 @@
+#mainCont{
+    margin:auto;
+    border:1px solid red;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+}
+#mainCont>div{
+    border:1px solid blue;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+}

@@ -96,6 +96,9 @@
 
   headingfeature.setAttribute("class","productList")
   headingfeature.innerText="Featured brands"
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingfeature)
   var featurebox = document.createElement("div")
   featurebox.setAttribute("Id","featurebox")
 
@@ -129,7 +132,7 @@
 
     featurebox.append(box);
   });
-  document.querySelector("#mainCont").append(headingfeature, featurebox);
+  document.querySelector("#mainCont").append(headbar, featurebox);
 </script>
 <!--  topsellers-->
 <script>
@@ -139,6 +142,9 @@
   var headingtop = document.createElement("p");
   headingtop.setAttribute("class", "productList");
   headingtop.innerText = "Top Sellers From MuscleBlaze";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingtop)
   console.log(Muscleblaze);
   var topBox = document.createElement("div");
   topBox.setAttribute("Id", "topBox");
@@ -181,10 +187,10 @@
 
     topBox.append(box);
   });
-  document.querySelector("#mainCont").append(headingtop, topBox);
+  document.querySelector("#mainCont").append(headbar, topBox);
   topBox.addEventListener("click",function()
   {
-    window.location.href="product.html"
+    window.location.href="shop.html"
   })
 </script>
 
@@ -197,6 +203,9 @@
   var headingpopular = document.createElement("p");
   headingpopular.setAttribute("class", "productList");
   headingpopular.innerText = "Popular categories";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingpopular)
   console.log(Muscleblaze);
   var popularBox = document.createElement("div");
   popularBox.setAttribute("Id", "popularBox");
@@ -204,6 +213,7 @@
   console.log(featureBrand);
   popularBrand.map(function (elem, index, array) {
     var box = document.createElement("div");
+    box.setAttribute("class","box")
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     var name = document.createElement("p");
@@ -221,7 +231,7 @@
 
     popularBox.append(box);
   });
-  document.querySelector("#mainCont").append(headingpopular, popularBox);
+  document.querySelector("#mainCont").append(headbar, popularBox);
 </script>
 <!-- grandsaving-->
 <script>
@@ -231,6 +241,9 @@
   var headingGrand = document.createElement("p");
   headingGrand.setAttribute("class", "productList");
   headingGrand.innerText = "Grand Saving Days";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingGrand)
   var GrandBox = document.createElement("div");
   GrandBox.setAttribute("Id", "GrandBox");
 
@@ -252,7 +265,7 @@
 
     GrandBox.append(box);
   });
-  document.querySelector("#mainCont").append(headingGrand, GrandBox);
+  document.querySelector("#mainCont").append(headbar, GrandBox);
 </script>
 <!-- tatamg -->
 <script>
@@ -262,6 +275,9 @@
   var headingTata = document.createElement("p");
   headingTata.setAttribute("class", "productList");
   headingTata.innerText = "Tata 1mg health products";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingTata)
   var tataBox = document.createElement("div");
   tataBox.setAttribute("Id", "tataBox");
 
@@ -284,7 +300,7 @@
 
     tataBox.append(box);
   });
-  document.querySelector("#mainCont").append(headingTata, tataBox);
+  document.querySelector("#mainCont").append(headbar, tataBox);
 </script>
 
 <!-- greensupplement -->
@@ -295,6 +311,9 @@
   var headingGreen = document.createElement("p");
   headingGreen.setAttribute("class", "productList");
   headingGreen.innerText = "Green Supplements | Supplement of the week";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingGreen)
   var greenBox = document.createElement("div");
   greenBox.setAttribute("Id", "greenBox");
 
@@ -316,5 +335,5 @@
 
     greenBox.append(box);
   });
-  document.querySelector("#mainCont").append(headingGreen, greenBox);
+  document.querySelector("#mainCont").append(headbar, greenBox);
 </script>
