@@ -69,16 +69,16 @@ function promocode() {
 showtotal();
 items_no();
 
-document.querySelector("#home").addEventListener("click", home);
+// document.querySelector("#home").addEventListener("click", home);
 
-function home() {
-  window.location.href = "Shop.html";
-}
+// function home() {
+//   window.location.href = "Shop.html";
+// }
 
 document.querySelector("#checkout_btn").addEventListener("click",checkout)
 
 function checkout() {
-  window.location.href = "payment.html";
+  window.location.href="payment.html"
 }
 
 function increaseqnty(index) {
