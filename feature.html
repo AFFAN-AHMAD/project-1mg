@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="css\footer.css">
 
     <link rel="stylesheet" href="AskDocCSS\header.css" />
-   
+    <link rel="stylesheet" href="css\header.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -117,17 +121,13 @@ img {vertical-align: middle;}
 }
 
 </style>
-<link rel="stylesheet" href="css\header.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+
 <script
 src="https://kit.fontawesome.com/eb21f449ee.js"
 crossorigin="anonymous"
 ></script>
   </head>
-  <body>
+  <hr>
     <div class="navbar" style="margin:auto">
         <div class="navbarlogo_tabs">
           <div id="logo" onclick="mainpage()">
@@ -697,7 +697,39 @@ crossorigin="anonymous"
           </li>
         </ul>
       </div>
-    </body>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="https://www.dabur.com/img/assets/20382-dabur-banner.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXswCk6etR6xyhSt_raA5YbCjcsXujvM0rDg&usqp=CAU" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <!-- <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://sellglobal.ebay.in/seller-center/wp-content/uploads/2021/11/ebay-banner-2.webp" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div> -->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+</div>
+  
+
     <div id="mainCont"></div>
     <div id = "border"></div>
     <div id ="summary">
@@ -728,7 +760,7 @@ crossorigin="anonymous"
         
        
     </div>
-    <hr style=height:1px;background-color:GREY;>
+    <hr style= "height:1px; background-color:#eaeaea";></hr>
     <footer id="footer-bar" class="footer">
 
 
@@ -959,6 +991,7 @@ crossorigin="anonymous"
 <script src="./database/tata_mg.js"></script>
 <script src="./database/topSellers.js"></script>
 <script src="./js/header.js"></script>
+<script src = "./js/slider.js"></script>
 <!-- featurebrand-->
 <script>
   // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
@@ -1203,32 +1236,6 @@ crossorigin="anonymous"
   });
   document.querySelector("#mainCont").append(headbar, greenBox);
   // /sliding script
-  var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) 
-  {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  
  
 </script>

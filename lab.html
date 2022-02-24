@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "mainCont"></div>
+</body>
+</html>
+<script src="./database/labdata.js"></script>
+<script>
+    console.log(labarr)
+  
+  var headingLab = document.createElement("p");
+  headingLab.setAttribute("class", "productList");
+  headingLab.innerText = "Green Supplements | Supplement of the Week";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingLab)
+  var labBox = document.createElement("div");
+  labBox.setAttribute("Id", "labBox");
+
+  labarr.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
+    console.log(box);
+
+    labBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, labBox);
+</script>

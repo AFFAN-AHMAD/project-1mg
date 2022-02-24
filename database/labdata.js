@@ -1,31 +1,31 @@
 var labarr=[
     {
-        Name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",  
-        Price:1599,  
-        discount: "42% off",  
-        Url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
-        Rating: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95"  
+        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",  
+        price:1599,  
+        off: "42% off",  
+        img_url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
+         
     },
     {
-        Name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
-        Price:1199,  
-        discount: "45% off",   
-        Url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
-        Rating: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95"
+        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
+        price:1199,  
+        off: "45% off",   
+        img_url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
+       
     },
     {
-        Name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
-        Price:1999,  
-        discount: "41% off",   
-        Url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
-        Rating: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95"
+        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
+        price:1999,  
+        off: "41% off",   
+        img_url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
+       
     },
     {
-        Name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
-        Price:1350,  
-        discount: "43% off",   
-        Url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
-        Rating: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95"
+        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
+        price:1350,  
+        off: "43% off",   
+        img_url: "https://www.1mg.com/labs/new-delhi/packages/comprehensive-silver-full-body-checkup-34938-95" , 
+       
     }
     
     
