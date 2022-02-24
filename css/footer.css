@@ -318,3 +318,25 @@
      opacity: .6;
      margin: 12px;
  }
+ #border{
+     height:50px;
+     background-color: whitesmoke;
+ }
+ #summaryHead{
+    font-weight: 600;
+    color: #1a1a1a;
+    display: block;
+ }
+ .contentHead{
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    display: block;
+ }
+ .content{
+    color: #666;
+    line-height: 1.42857143;
+    display: block;
+    text-align: justify;
+
+ }
