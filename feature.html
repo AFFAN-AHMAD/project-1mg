@@ -233,13 +233,16 @@ img {vertical-align: middle;}
      
       </p>
       <p class="contenHead"> The Feathers in Our Cap</p>
-      <p class="content">At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like BML Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India Award and Top 50 venture in The Smart CEO-Startup50 India. We have been selected as the only company from across the globe for SD#3 "Health & Well Being for all" by Unreasonable group, US State Department. In 2019 alone we received three awards including the BMW Simply Unstoppable Award.</p>
+      <p class="content">At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like <span class="highlight">BML Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India </span> and Top 50 venture in The Smart CEO-Startup50 India. We have been selected as the only company from across the globe for <span class="highlight">SD#3 "Health & Well Being for all" by Unreasonable group, US State Department.</span> In 2019 alone we received three awards including <span class="highlight">the BMW Simply Unstoppable Award.</span></p>
       <p class="contenHead">The Services We Offer</p>
-      <p class="content">Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.
-
-        We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.
+      <p class="content">Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.</p>
+      <p class="content"> We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.</p>
+      <p class="content"> Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+      <p class="content">Visit our online medical store now, and avail online medicine purchase at a discount.</p>
+      <p class="content">Stay Healthy!</p>
+       
         
-        Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+       
     </div>
     <hr style=height:1px;background-color:GREY;">
     <footer id="footer-bar" class="footer">
@@ -484,16 +487,9 @@ img {vertical-align: middle;}
   var featurebox = document.createElement("div")
   featurebox.setAttribute("Id","featurebox")
 
-
-
-
   featureBrand.map(function (elem, index, array) {
 
     var box = document.createElement("div");
-
-  
-
-    
 
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
@@ -561,6 +557,8 @@ img {vertical-align: middle;}
     mrp.innerText = elem.mrp
     var discount = document.createElement("p")
     discount.innerText=elem.off+" "+"off"
+    discount.style.color="#1aab2a"
+    discount.style.fontWeight="bold"
     ratediv.append(mrptag,mrp , discount)
     var price = document.createElement("h5")
     price.innerText="₹"+elem.price
