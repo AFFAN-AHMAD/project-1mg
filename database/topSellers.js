@@ -15,7 +15,8 @@ var Muscleblaze=[
         desc:"jar of 1 kg",
         mrp:1429,
         off:"23%",
-        price:1099
+        price:1099,
+
     },
     {
         image_url: "https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600159650/cropped/mjjil9vgcysuadxxwbqy.png",
@@ -24,7 +25,8 @@ var Muscleblaze=[
         desc:"jar of 1 kg",
         mrp:2299,
         off:"21%",
-        price:1799
+        price:1799,
+
     },
     {
         image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600202766/cropped/rvpthfcm8tnlpr4s3hmd.png",
@@ -33,7 +35,7 @@ var Muscleblaze=[
         desc:"jar of 1 kg",
         mrp:3849,
         off:"22%",
-        price:2999 
+        price:2999, 
     },
     {
         image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1640260929/vi1egyox0b02bvn5k1ay.jpg" ,
@@ -42,7 +44,7 @@ var Muscleblaze=[
         desc:"jar of 1 kg",
         mrp:2749,
         off:"34%",
-        price:1799
+        price:1799,
     },
 
     {
@@ -52,7 +54,7 @@ var Muscleblaze=[
         desc:"jar of 1 kg",
         mrp:1999,
         off:"40%",
-        price:1199
+        price:1199,
     },
     {
         image_url:"https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1600611609/cropped/rknx3iszt8wwkpttv3lx.png",
@@ -61,6 +63,6 @@ var Muscleblaze=[
         desc:"jar of 1 kg",
         mrp:5839,
         off:"36%",
-        price:3699
+        price:3699,
     },
 ]

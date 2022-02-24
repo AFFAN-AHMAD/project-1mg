@@ -356,3 +356,7 @@
      display: block;
      text-align: justify;
  }
+ .highlight{
+     color:#666;
+     font-weight: bold;
+ }
