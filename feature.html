@@ -992,8 +992,55 @@ crossorigin="anonymous"
 <script src="./database/topSellers.js"></script>
 <script src="./js/header.js"></script>
 <script src = "./js/slider.js"></script>
+<script src="./database/labdata.js"></script>
 <!-- featurebrand-->
 <script>
+
+  // health checkup
+  var headingLab = document.createElement("p");
+  headingLab.setAttribute("class", "productList");
+  headingLab.innerText = "Full body health checkups";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingLab)
+  var labBox = document.createElement("div");
+  labBox.setAttribute("Id", "labBox");
+
+  labarr.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var img2 = document.createElement("img");
+    img2.setAttribute("src", elem.image2_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    name.style.fontSize="17px"
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img,img2)
+    nameContainer.append(name)
+    var rating = document.createElement("div")
+    rating.setAttribute("Id","ratebox")
+    var mrp  = document.createElement("s")
+    mrp.innerText = elem.mrp
+    mrp.style.fontSize="12px"
+    var price = document.createElement("span")
+    price.innerText="₹"+elem.price
+    var off = document.createElement("div")
+    off.innerHTML=elem.off
+    var pricebox = document.createElement("div")
+    pricebox.setAttribute("Id","pricebox")
+    pricebox.append("₹ ",mrp,price,)
+    off.setAttribute("id","offbox")
+    rating.append(pricebox,off)
+    box.append( nameContainer,imgContainer,rating);
+    console.log(box);
+
+    labBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, labBox);
   // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
   var headingfeature = document.createElement("p");
 

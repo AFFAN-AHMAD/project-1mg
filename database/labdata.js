@@ -1,6 +1,6 @@
 var labarr=[
     {
-        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",  
+        name: "Comprehensive Gold Full Body Checkup",  
         price:1599,
         mrp:  2798,
         off: "42% off",  
@@ -9,7 +9,7 @@ var labarr=[
          
     },
     {
-        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
+        name: " Women Wellness Advanced Package",   
         price:1199,
         mrp:  2198,
         off: "45% off",   
@@ -18,7 +18,7 @@ var labarr=[
        
     },
     {
-        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
+        name: "Comprehensive Platinum Full Body Checkup",   
         price:1999,
         mrp:  3398,
         off: "41% off",   
@@ -27,7 +27,7 @@ var labarr=[
        
     },
     {
-        name: "Glycosylated Haemoglobin  Glucose Fasting  Liver Function Test-10",   
+        name: "Good Health Silver Package",   
         price:1350,
         mrp:  2398,
         off: "43% off",   
