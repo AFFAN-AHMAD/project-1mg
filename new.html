@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+</head>
+<style>
+    *{
+        
+    }
+    #container{
+        /* border: 2px solid red; */
+        margin-left: 120px;
+        width: 80%;
+        height: 370px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 150px 150px;
+        grid-template-areas: "a a"
+                            " b c";
+    }
+    #home{
+        /* border: 2px solid purple; */
+        width: 100%;
+        height: 100px;
+        grid-area: a;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 95px;
+    }
+
+    #innerhome{
+        /* border: 2px solid black;  */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        grid-template-rows: 65px;
+        color: #212121DE;
+        
+    }
+    #innerhome>div{
+         /* border: 2px solid darkmagenta; */
+    }
+
+    #teal1{
+        /* border: 2px solid teal; */
+        width: 100%;
+        height: 180px;
+        grid-area: b;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 50px 50px 50px;
+        gap: 10px;
+    }
+    #teal1>div{
+        /* border: 2px solid darkgreen; */
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+    }
+    #teal1>div>div{
+        /* border: 2px solid darkblue; */
+        
+    }
+    #adjust{
+        position: relative;
+        margin-left: 30px;
+    }
+    
+    
+
+    #teal2{
+        /* border: 2px solid teal; */
+        width: 100%;
+        height: 180px;
+        grid-area: c;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 50px 50px 50px;
+        gap: 10px;
+
+    }
+    #teal2>div{
+        border: 2px solid darkgreen;
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+    }
+
+    #teal2>div>div{
+        border: 2px solid darkblue;
+        
+    }
+    
+    #find{
+        border: 2px solid brown ;
+        width: 25%;
+        height: 80px;
+        margin-left: 37%;
+        border-radius: 25px;
+        
+    }
+    #find>div{
+        /* border: 2px solid gray; */
+        width: 80%;
+        height:50px ;
+        position: relative;
+        top: 20%;
+        left: 10%;
+        text-align: center;
+        font-size: 25px;
+        color: #FF6F61 ;
+        
+    }
+
+
+</style>
+<body>
+    <div id="container">
+        <div id="home">
+            <div id="innerhome">
+                <div>  <i class="fa-regular fa-house-user"></i></div>
+                <div><h3>HEALTH TEST AT YOUR HOME</h3></div>
+           
+            </div>
+            <div  id="innerhome">
+                <div>    </div>  
+                <div>  <h3>VISIT A LAB NEAR YOU</h3></div>
+            </div>
+       
+        </div>
+
+        <div id="teal1">
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> COVID-RTPCR</div>
+            </div>
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> CBC</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> Vitamin-D(25-OH)</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()"  id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> Thyroid profile Total</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> HbA 1c</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> Liver Function Test</div>
+            </div>
+            
+            
+        </div>
+
+     
+        <!-- right box -->
+
+        <div  id="teal2">
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> USG Whole Abdomen</div>
+            </div>
+
+            <div>
+                <div> <i onclick="Page()"  id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> X-Ray Chest PA View</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()"  id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> ECG</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> MRI Brain</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> HRCT CHEST-Plain</div>
+            </div>
+
+
+            <div>
+                <div> <i onclick="Page()" id="adjust" class="fa-solid fa-circle-plus"></i>  </div>
+                <div> CECT Whole Abdomen</div>
+            </div>
+    
+
+
+
+        </div>
+
+
+        </div>
+    
+        <div onclick="Page2()" id="find">
+         
+            <div onclick="Page2()"> FIND YOUR TESTS</div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+    // add to cart funct
+      function Page(){
+             window.open("https://www.1mg.com/labs/new-delhi/search?pathology=comprehensive-silver-full-body-checkup-34938%2Ccovid-antibody-igg-quantitative-34917%2Cvitamin-d-25-oh-1972&utm_source=1mg&utm_medium=jewel&utm_campaign=labsgrowth", '_blank')
+           }
+
+
+           function Page2(){
+               window.open("www.google.com")
+           }
+
+
+
+
+</script>
