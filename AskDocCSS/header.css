@@ -66,8 +66,10 @@ box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1
 }
 
 .navbar11{
-margin-left:980px;
-margin-top:-40px;
+/* border: 1px solid salmon; */
+width:40%;
+
+margin-top:-10px;
 display: flex;
 gap:6px;
 font-family:"Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -103,4 +105,9 @@ border-radius: 5px;
 .navbar > p:hover {
     color: #FF6F61;
     cursor: pointer;
+}
+#navbar2{
+    display: flex;
+    justify-content: space-between;
+    /* width:60% */
 }
