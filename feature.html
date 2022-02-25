@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Online Pharmacy India | Buy Medicines from India's Trusted Medicine Store: 1mg.com</title>
     <link rel="stylesheet" href="./css/database.css" />
 
     <link rel="stylesheet" href="css\footer.css">
 
     <link rel="stylesheet" href="AskDocCSS\header.css" />
-   
+    <link rel="stylesheet" href="css\header.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -73,8 +77,8 @@ img {vertical-align: middle;}
   
 }
 .numbertext+img{
-  height:250px;
-  width:80%
+  height:170px;
+  /* width:500px */
 }
 
 /* The dots/bullets/indicators */
@@ -117,17 +121,13 @@ img {vertical-align: middle;}
 }
 
 </style>
-<link rel="stylesheet" href="css\header.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+
 <script
 src="https://kit.fontawesome.com/eb21f449ee.js"
 crossorigin="anonymous"
 ></script>
   </head>
-  <body>
+  <hr>
     <div class="navbar" style="margin:auto">
         <div class="navbarlogo_tabs">
           <div id="logo" onclick="mainpage()">
@@ -697,7 +697,39 @@ crossorigin="anonymous"
           </li>
         </ul>
       </div>
-    </body>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="https://freedesignfile.com/upload/2018/08/peanut-butter-poster-template-vector-01.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="https://m.media-amazon.com/images/S/aplus-media/vc/42f751f8-8381-43a6-ae64-5be0a026fb6a.__CR0,0,970,300_PT0_SX970_V1___.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <!-- <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://sellglobal.ebay.in/seller-center/wp-content/uploads/2021/11/ebay-banner-2.webp" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div> -->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+</div>
+  
+
     <div id="mainCont"></div>
     <div id = "border"></div>
     <div id ="summary">
@@ -728,7 +760,7 @@ crossorigin="anonymous"
         
        
     </div>
-    <hr style=height:1px;background-color:GREY;>
+    <hr style= "height:1px; background-color:#eaeaea";></hr>
     <footer id="footer-bar" class="footer">
 
 
@@ -959,8 +991,56 @@ crossorigin="anonymous"
 <script src="./database/tata_mg.js"></script>
 <script src="./database/topSellers.js"></script>
 <script src="./js/header.js"></script>
+<script src = "./js/slider.js"></script>
+<script src="./database/labdata.js"></script>
 <!-- featurebrand-->
 <script>
+
+  // health checkup
+  var headingLab = document.createElement("p");
+  headingLab.setAttribute("class", "productList");
+  headingLab.innerText = "Full body health checkups";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingLab)
+  var labBox = document.createElement("div");
+  labBox.setAttribute("Id", "labBox");
+
+  labarr.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var img2 = document.createElement("img");
+    img2.setAttribute("src", elem.image2_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    name.style.fontSize="17px"
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img,img2)
+    nameContainer.append(name)
+    var rating = document.createElement("div")
+    rating.setAttribute("Id","ratebox")
+    var mrp  = document.createElement("s")
+    mrp.innerText = elem.mrp
+    mrp.style.fontSize="12px"
+    var price = document.createElement("span")
+    price.innerText="₹"+elem.price
+    var off = document.createElement("div")
+    off.innerHTML=elem.off
+    var pricebox = document.createElement("div")
+    pricebox.setAttribute("Id","pricebox")
+    pricebox.append("₹ ",mrp,price,)
+    off.setAttribute("id","offbox")
+    rating.append(pricebox,off)
+    box.append( nameContainer,imgContainer,rating);
+    console.log(box);
+
+    labBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, labBox);
   // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
   var headingfeature = document.createElement("p");
 
@@ -1203,32 +1283,9 @@ crossorigin="anonymous"
   });
   document.querySelector("#mainCont").append(headbar, greenBox);
   // /sliding script
-  var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) 
-  {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  
+  function mainpage()
+  {
+    window.location.href="feature.html"
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
- 
 </script>
