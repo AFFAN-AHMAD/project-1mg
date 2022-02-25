@@ -144,5 +144,4 @@ var Muscleblaze=[
     },
     
 ]
-
 localStorage.setItem("productdata",JSON.stringify(Muscleblaze))
