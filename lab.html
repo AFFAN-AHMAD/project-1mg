@@ -869,7 +869,7 @@
 <script src="./database/labdata.js"></script>
 <script>
     console.log(labarr)
-
+    var labdata =JSON.parse(localStorage.getItem("cartdata"))||[]
     var headingLab = document.createElement("p");
     headingLab.setAttribute("class", "productList");
     headingLab.innerText = "Full body health checkups";
@@ -881,6 +881,12 @@
 
     labarr.map(function(elem, index, array) {
         var box = document.createElement("div");
+        box.addEventListener("click",function()
+    {
+      elem.quantity = 1
+     labdata.push(elem)
+     localStorage.setItem("cartdata",JSON.stringify(labdata))
+    })
         var img = document.createElement("img");
         img.setAttribute("src", elem.image_url);
         var img2 = document.createElement("img");
