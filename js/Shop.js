@@ -1,11 +1,11 @@
-var mensData = JSON.parse(localStorage.getItem("mensData"));
-var womensData = JSON.parse(localStorage.getItem("womensData"));
+var productdata = JSON.parse(localStorage.getItem("productdata"));
+// var womensData = JSON.parse(localStorage.getItem("womensData"));
 var carts = JSON.parse(localStorage.getItem("cartdata")) || [];
 
-function display(mensData, womensData) {
+function display(productdata) {
     document.querySelector("#container").innerText = "";
-    mensData.map(function(elem) {
-        elem.brand = "Menswear";
+    productdata.map(function(elem) {
+        elem.brand = "Muscle Blaze";
         var childDiv = document.createElement("div");
         var innerDiv = document.createElement("div");
         var img = document.createElement("img");
@@ -27,29 +27,6 @@ function display(mensData, womensData) {
         childDiv.append(img, name, innerDiv, addtocartbtn);
         document.querySelector("#container").append(childDiv);
     });
-
-    womensData.map(function(elem) {
-        elem.brand = "Womenswear";
-        var childDiv = document.createElement("div");
-        var innerDiv = document.createElement("div");
-        var img = document.createElement("img");
-        img.setAttribute("src", elem.image_url);
-        var name = document.createElement("p");
-        name.innerText = elem.name;
-        var price = document.createElement("p");
-        price.innerText = elem.price;
-        var strikedoffprice = document.createElement("s");
-        strikedoffprice.innerText = elem.strikedoffprice;
-        var addtocartbtn = document.createElement("button");
-        addtocartbtn.innerText = "Add to Cart";
-        addtocartbtn.addEventListener("click", function() {
-            addtocartfun(elem);
-        });
-        innerDiv.append(price, strikedoffprice);
-        innerDiv.setAttribute("class", "innerdiv");
-        childDiv.append(img, name, innerDiv, addtocartbtn);
-        document.querySelector("#container").append(childDiv);
-    });
     document.querySelector("#cart").addEventListener("click", cart);
 
     function cart() {
@@ -63,7 +40,7 @@ function display(mensData, womensData) {
     }
 }
 
-display(mensData, womensData);
+display(productdata);
 
 var sorter = document.querySelector("#pricefilter");
 sorter.addEventListener("change", sortitems);

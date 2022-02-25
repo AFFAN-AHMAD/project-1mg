@@ -1,35 +1,63 @@
 function mainpage() {
-    window.location.href = "feature.html";
+  window.location.href = "header.html";
 }
 
 function lab_test_page() {
-    window.location.href = "lab.html";
+  window.location.href = "header.html";
 }
 
 function ask_doc_page() {
-    window.location.href = "AskDoctor.html";
+  window.location.href = "AskDoctor.html";
 }
 
 function covid_page() {
-    window.location.href = "header.html";
+  window.location.href = "header.html";
 }
 
 function ayurveda_page() {
-    window.location.href = "header.html";
+  window.location.href = "header.html";
 }
 
 function care_plan_page() {
-    window.location.href = "header.html";
+  window.location.href = "header.html";
 }
 
 function cart_page() {
-    window.location.href = "Cart.html";
+  window.location.href = "Cart.html";
 }
 
-// if (localStorage.getItem(JSON.parse("cartdata")).length == 0) {
-//   document.querySelector(".count").innerText = 0;
-// } else {
-//   document.querySelector(".count").innerText = localStorage.getItem(
-//     JSON.parse("cartdata")
-//   ).length;
-// }
+var user = JSON.parse(localStorage.getItem("userdata"))||[];
+  
+  if(user.length==0){
+    var log = document.createElement("a")
+    log.setAttribute("href","login.html")
+    log.setAttribute("class","logandsign")
+    log.innerText="Login  | "
+    // <a href="login.html" class="logandsign">Login  |</a>
+    var sign = document.createElement("a")
+    sign.setAttribute("href","signUp.html")
+    sign.setAttribute("class","logandsign")
+    sign.innerText="Sign Up"
+    // var sign = <a href="signUp.html" class="logandsign">Sign Up</a>
+    document.getElementById("user").append(log,sign);                           
+  }
+
+  if(user.length!=0)
+  {
+    var logout = document.createElement("a")
+    logout.addEventListener("click",function(){
+      localStorage.removeItem("userdata");
+      document.location.reload()
+    })
+    logout.setAttribute("class","logandsign")
+    logout.style.marginLeft="10px"
+    logout.innerText="LogOUT"
+
+    var e = "";
+    for(var i=0;i<8;i++)
+    {
+      e += user[0].email[i];
+    }
+    document.querySelector("#user").innerText= "Hi "+e
+    document.querySelector("#user").append(logout)
+  }
