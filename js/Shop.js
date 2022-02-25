@@ -51,39 +51,26 @@ function sortitems() {
         productdata.sort(function(a, b) {
             return b.price - a.price;
         });
-        productdata.sort(function(a, b) {
-            return b.price - a.price;
-        });
         display(productdata);
     } 
-    // else if (sorter.value == "lth") {
-    //     mensData.sort(function(a, b) {
-    //         return a.price - b.price;
-    //     });
-    //     womensData.sort(function(a, b) {
-    //         return a.price - b.price;
-    //     });
-    //     display(productdata);
-    // }
+    else if (sorter.value == "lth") {
+        productdata.sort(function(a, b) {
+            return a.price - b.price;
+        });
+        display(productdata);
+    }
 }
 
-// var searchbar = document.getElementById("searchbar");
-// searchbar.addEventListener("keyup", search);
+var searchbar = document.getElementById("search_bar_of_products");
+searchbar.addEventListener("keyup", search);
 
 function search() {
-    // console.log(searchbar.value);
+    console.log(searchbar.value);
     var filtermendata = productdata.filter(function(elem) {
         return elem.name.includes(searchbar.value);
     });
-    // var filterwomendata = womensData.filter(function(elem) {
-    //     return elem.name.includes(searchbar.value);
-    // });
     display(filtermendata);
 }
-
-// document.getElementById("searchbtn").addEventListener("click", function() {
-//     document.getElementById("searchbar").style.display = "inline-block";
-// });
 
 var sorterbrand = document.querySelector("#brandfilter");
 sorterbrand.addEventListener("change", sortitemsbybrand);

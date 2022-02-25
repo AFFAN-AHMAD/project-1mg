@@ -194,7 +194,7 @@ body {
   /* border: red solid; */
 }
 
-#searchbarinfo {
+.searchbarinfo {
   width: 100%;
   font-size: 14px;
   line-height: 21px;
