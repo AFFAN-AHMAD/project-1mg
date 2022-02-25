@@ -36,11 +36,23 @@ function display(productdata) {
     function addtocartfun(elem) {
         carts.push(elem);
         elem.quantity = 1;
+        cartnum();
         localStorage.setItem("cartdata", JSON.stringify(carts));
     }
 }
 
+cartnum();
+
 display(productdata);
+
+function cartnum(){
+if(carts!=[])
+{
+  document.querySelector(".count").innerText=carts.length;
+  display(productdata);
+}
+}
+
 
 var sorter = document.querySelector("#pricefilter");
 sorter.addEventListener("change", sortitems);
@@ -83,3 +95,4 @@ function sortitemsbybrand() {
     
     display(filtermendata);
 }
+
