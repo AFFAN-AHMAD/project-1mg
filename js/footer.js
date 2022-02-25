@@ -1,4 +1,4 @@
-var count = 1;
+var count = 0;
 function dropdown() {
   if (count % 2 == 0) {
       document.getElementById("dropdown_img").style.transform="rotate(180deg)"
