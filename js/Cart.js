@@ -3,6 +3,7 @@ var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 function display(cartdata) {
   document.getElementById("container").innerText = "";
   cartdata.map(function (elem, index) {
+    
     var childDiv = document.createElement("div");
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
