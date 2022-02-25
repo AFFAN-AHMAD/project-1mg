@@ -1,7 +1,7 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+function next(n) {
   showSlides(slideIndex += n);
 }
 
@@ -27,6 +27,10 @@ function showSlides(n) {
 
 function pagechange() {
   window.location.href="https://www.1mgdoctors.com/doctors/register/new"
+}
+
+function mainpage() {
+  window.location.href = "feature.html"
 }
 
 
