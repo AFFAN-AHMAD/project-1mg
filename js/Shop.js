@@ -1,7 +1,7 @@
-var productdata = JSON.parse(localStorage.getItem("productdata"));
+var productdata = JSON.parse(localStorage.getItem("productdata"))||[];
 // var womensData = JSON.parse(localStorage.getItem("womensData"));
 var carts = JSON.parse(localStorage.getItem("cartdata")) || [];
-
+// console.log(productdata)
 function display(productdata) {
     document.querySelector("#container").innerText = "";
     productdata.map(function(elem) {
@@ -27,7 +27,7 @@ function display(productdata) {
         childDiv.append(img, name, innerDiv, addtocartbtn);
         document.querySelector("#container").append(childDiv);
     });
-    document.querySelector("#cart").addEventListener("click", cart);
+    // document.querySelector("#cart").addEventListener("click", cart);
 
     function cart() {
         window.location.href = "Cart.html";
@@ -48,52 +48,51 @@ sorter.addEventListener("change", sortitems);
 function sortitems() {
     // console.log("sort")
     if (sorter.value == "htl") {
-        mensData.sort(function(a, b) {
+        productdata.sort(function(a, b) {
             return b.price - a.price;
         });
-        womensData.sort(function(a, b) {
+        productdata.sort(function(a, b) {
             return b.price - a.price;
         });
-        display(mensData, womensData);
-    } else if (sorter.value == "lth") {
-        mensData.sort(function(a, b) {
-            return a.price - b.price;
-        });
-        womensData.sort(function(a, b) {
-            return a.price - b.price;
-        });
-        display(mensData, womensData);
-    }
+        display(productdata);
+    } 
+    // else if (sorter.value == "lth") {
+    //     mensData.sort(function(a, b) {
+    //         return a.price - b.price;
+    //     });
+    //     womensData.sort(function(a, b) {
+    //         return a.price - b.price;
+    //     });
+    //     display(productdata);
+    // }
 }
 
-var searchbar = document.getElementById("searchbar");
-searchbar.addEventListener("keyup", search);
+// var searchbar = document.getElementById("searchbar");
+// searchbar.addEventListener("keyup", search);
 
 function search() {
     // console.log(searchbar.value);
-    var filtermendata = mensData.filter(function(elem) {
+    var filtermendata = productdata.filter(function(elem) {
         return elem.name.includes(searchbar.value);
     });
-    var filterwomendata = womensData.filter(function(elem) {
-        return elem.name.includes(searchbar.value);
-    });
-    display(filtermendata, filterwomendata);
+    // var filterwomendata = womensData.filter(function(elem) {
+    //     return elem.name.includes(searchbar.value);
+    // });
+    display(filtermendata);
 }
 
-document.getElementById("searchbtn").addEventListener("click", function() {
-    document.getElementById("searchbar").style.display = "inline-block";
-});
+// document.getElementById("searchbtn").addEventListener("click", function() {
+//     document.getElementById("searchbar").style.display = "inline-block";
+// });
 
 var sorterbrand = document.querySelector("#brandfilter");
 sorterbrand.addEventListener("change", sortitemsbybrand);
 
 function sortitemsbybrand() {
     // console.log(searchbar.value);
-    var filtermendata = mensData.filter(function(elem) {
+    var filtermendata = productdata.filter(function(elem) {
         return elem.name.includes(sorterbrand.value);
     });
-    var filterwomendata = womensData.filter(function(elem) {
-        return elem.name.includes(sorterbrand.value);
-    });
-    display(filtermendata, filterwomendata);
+    
+    display(filtermendata);
 }

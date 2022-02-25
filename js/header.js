@@ -39,7 +39,7 @@ var user = JSON.parse(localStorage.getItem("userdata"))||[];
     sign.setAttribute("class","logandsign")
     sign.innerText="Sign Up"
     // var sign = <a href="signUp.html" class="logandsign">Sign Up</a>
-    document.getElementById("user").append(log,sign);                           
+    // document.getElementById("user").append(log,sign);                           
   }
 
   if(user.length!=0)
