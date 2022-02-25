@@ -1,131 +1,165 @@
-#mainCont {
-    display: flex;
-}
-
-#container {
-    width: 90%;
-    margin: auto;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 30px;
-    /* border: red solid; */
-}
-
-* {
-    box-sizing: border-box;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-}
-
-.innerdiv {
-    height: 30px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-s {
-    font-size: 13px;
-    font-weight: 400;
-    color: #7e818c;
-}
-
-.legitscript {
-    width: 10%;
-    margin-left: 45%/* border: red solid; */
-}
-
-#container>div {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    overflow: hidden;
-    height: auto;
-    width: 60%;
-    margin-left: 50px;
-}
-
-#container>div:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#container>div>img {
-    height: 250px;
-    width: 80%;
-}
-
-#container>div>p {
-    color: #212121;
-    margin-bottom: 3px;
-    height: auto;
-    word-wrap: break-word;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-}
-
-button {
-    border-radius: 5px;
-    font-size: medium;
-    border: 0px;
-}
-
-button:hover {
-    background-color: salmon;
-    /* box-shadow: 0 10px 30px 0px rgba(184, 232, 188, 0.8);
-    -moz-box-shadow: 0 10px 30px 0px rgba(165, 208, 161, 0.8);
-    -webkit-box-shadow: 0 10px 30px 0px rgba(93, 212, 89, 0.8);
-    -o-box-shadow: 0 10px 30px 0px rgba(114, 212, 89, 0.8);
-    -ms-box-shadow: 0 10px 30px 0px rgba(89, 212, 116, 0.8); */
-    color: rgb(255, 255, 255);
-}
-
-#navbar {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-evenly;
-    position: fixed;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#navbar>button {
-    width: 20%;
-    font-weight: 600;
-    background-color: black;
-    color: aliceblue;
-}
-
-#navbar:hover {
-    height: 50px;
-}
-
-#trend {
-    margin-top: 50px;
-}
-
-#searchbar {
-    display: block;
-    margin: 1%;
-}
-
-#brandfilter {
-    display: block;
-    margin: 1%;
-}
-
-#pricefilter {
-    display: block;
-    margin: 1%;
-}
+        #mainCont {
+            display: flex;
+        }
+        
+        #container {
+            width: 90%;
+            margin: auto;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 30px;
+            /* border: red solid; */
+        }
+        
+        * {
+            box-sizing: border-box;
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        .innerdiv {
+            height: 30px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        s {
+            font-size: 13px;
+            font-weight: 400;
+            color: #7e818c;
+        }
+        
+        .legitscript {
+            width: 10%;
+            margin-left: 45%/* border: red solid; */
+        }
+        
+        #container>div {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            overflow: hidden;
+            height: auto;
+            width: 60%;
+            margin: 50px;
+        }
+        
+        #container>div:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+        #container>div>img {
+            height: 250px;
+            width: 80%;
+            margin: 0 10%;
+        }
+        
+        #container>div>p {
+            color: #212121;
+            margin-bottom: 3px;
+            height: auto;
+            word-wrap: break-word;
+            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            white-space: normal;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        
+        button {
+            border-radius: 5px;
+            font-size: medium;
+            border: 0px;
+        }
+        
+        button:hover {
+            background-color: salmon;
+            color: rgb(255, 255, 255);
+        }
+        
+        #navbar {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: space-evenly;
+            position: fixed;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        #navbar>button {
+            width: 20%;
+            font-weight: 600;
+            background-color: black;
+            color: aliceblue;
+        }
+        
+        #navbar:hover {
+            height: 50px;
+        }
+        
+        #trend {
+            display: block;
+            margin: 0 40%;
+        }
+        
+        #searchbar {
+            width: 100%;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 6px 30px 7px 0;
+            border: none;
+            outline: 0;
+            bottom: 19px;
+            color: #3e3e3e;
+            text-indent: 12px;
+            height: auto;
+            border-radius: 0 3px 3px 0;
+            background-color: #f1f4f6;
+            display: inline;
+            margin: 0 2%;
+        }
+        
+        option {
+            font-weight: normal;
+            display: block;
+            white-space: nowrap;
+            min-height: 1.2em;
+            padding: 0px 2px 1px;
+            background-color: salmon;
+        }
+        
+        .search_icon {
+            width: 27px;
+            height: 33px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        #brandfilter {
+            display: block;
+            margin: 1%;
+            border-radius: 2%;
+            padding: 0 10px;
+            font-size: 16px;
+            border: none;
+        }
+        
+        #pricefilter {
+            display: block;
+            margin: 1%;
+            border-radius: 2%;
+            padding: 0 10px;
+            font-size: 20px;
+            border: none;
+        }
