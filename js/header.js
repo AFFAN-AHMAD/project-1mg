@@ -3,7 +3,7 @@ function mainpage() {
 }
 
 function lab_test_page() {
-  window.location.href = "feature.html";
+  window.location.href = "lab.html";
 }
 
 function ask_doc_page() {

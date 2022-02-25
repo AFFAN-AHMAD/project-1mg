@@ -992,9 +992,10 @@ crossorigin="anonymous"
 <script src="./js/header.js"></script>
 <script src = "./js/slider.js"></script>
 <script src="./database/labdata.js"></script>
+<script src ="./js/Cart.js"></script>
 <!-- featurebrand-->
 <script>
-
+  var labdata =JSON.parse(localStorage.getItem("cartdata"))||[]
   // health checkup
   var headingLab = document.createElement("p");
   headingLab.setAttribute("class", "productList");
@@ -1007,6 +1008,12 @@ crossorigin="anonymous"
 
   labarr.map(function (elem, index, array) {
     var box = document.createElement("div");
+    box.addEventListener("click",function()
+    {
+      elem.quantity = 1
+     labdata.push(elem)
+     localStorage.setItem("cartdata",JSON.stringify(labdata))
+    })
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     var img2 = document.createElement("img");
