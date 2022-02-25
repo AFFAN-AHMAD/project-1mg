@@ -26,10 +26,10 @@ function cart_page() {
   window.location.href = "Cart.html";
 }
 
-if (localStorage.getItem(JSON.parse("cartdata")).length == 0) {
-  document.querySelector(".count").innerText = 0;
-} else {
-  document.querySelector(".count").innerText = localStorage.getItem(
-    JSON.parse("cartdata")
-  ).length;
-}
+// if (localStorage.getItem(JSON.parse("cartdata")).length == 0) {
+//   document.querySelector(".count").innerText = 0;
+// } else {
+//   document.querySelector(".count").innerText = localStorage.getItem(
+//     JSON.parse("cartdata")
+//   ).length;
+// }
