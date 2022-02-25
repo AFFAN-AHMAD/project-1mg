@@ -1,9 +1,9 @@
 function mainpage() {
-  window.location.href = "header.html";
+  window.location.href = "feature.html";
 }
 
 function lab_test_page() {
-  window.location.href = "header.html";
+  window.location.href = "feature.html";
 }
 
 function ask_doc_page() {
@@ -11,15 +11,15 @@ function ask_doc_page() {
 }
 
 function covid_page() {
-  window.location.href = "header.html";
+  window.location.href = "feature.html";
 }
 
 function ayurveda_page() {
-  window.location.href = "header.html";
+  window.location.href = "feature.html";
 }
 
 function care_plan_page() {
-  window.location.href = "header.html";
+  window.location.href = "feature.html";
 }
 
 function cart_page() {

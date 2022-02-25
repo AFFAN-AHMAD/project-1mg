@@ -113,19 +113,32 @@ button:hover {
 
 #trend {
     margin-top: 50px;
+    text-align: center;
 }
 
-#searchbar {
-    display: block;
-    margin: 1%;
+#sorters {
+    display: flex;
+    justify-content: flex-end;
 }
 
 #brandfilter {
-    display: block;
     margin: 1%;
+    border: none;
+    border-bottom: 1px salmon solid;
 }
 
 #pricefilter {
-    display: block;
     margin: 1%;
+    border: none;
+    border-bottom: 1px salmon solid;
 }
+
+#brandfilter:hover,#pricefilter:hover {
+    color: #ff6f61;
+}
+
+#brandfilter:focus,#pricefilter:focus {
+    outline: none;
+}
+
+
