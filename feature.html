@@ -153,9 +153,7 @@ crossorigin="anonymous"
           </div>
         </div>
         <div id="loginSignup">
-          <div>
-            <a href="login.html" class="logandsign">Login</a> |
-            <a href="signUp.html" class="logandsign">Sign Up</a>
+          <div id="user">
           </div>
           <div>Offers</div>
           <div class="cart_icon" onclick="cart_page()">
@@ -1145,7 +1143,7 @@ crossorigin="anonymous"
     
     
 
-  console.log(popularBrand);
+  // console.log(popularBrand);
   var headingpopular = document.createElement("p");
   headingpopular.setAttribute("class", "productList");
   headingpopular.innerText = "Popular Categories";
@@ -1156,7 +1154,7 @@ crossorigin="anonymous"
   var popularBox = document.createElement("div");
   popularBox.setAttribute("Id", "popularBox");
 
-  console.log(featureBrand);
+  // console.log(featureBrand);
   popularBrand.map(function (elem, index, array) {
     var box = document.createElement("div");
     box.setAttribute("class","box")
@@ -1183,7 +1181,7 @@ crossorigin="anonymous"
 <script>
 
 
-  console.log(grandSavings);
+  // console.log(grandSavings);
   var headingGrand = document.createElement("p");
   headingGrand.setAttribute("class", "productList");
   headingGrand.innerText = "Grand Saving Days";
@@ -1193,7 +1191,7 @@ crossorigin="anonymous"
   var GrandBox = document.createElement("div");
   GrandBox.setAttribute("Id", "GrandBox");
 
-  console.log(featureBrand);
+  // console.log(featureBrand);
   grandSavings.map(function (elem, index, array) {
     var box = document.createElement("div");
     var img = document.createElement("img");
@@ -1217,7 +1215,7 @@ crossorigin="anonymous"
 <script>
 
 
-  console.log(tataMg);
+  // console.log(tataMg);
   var headingTata = document.createElement("p");
   headingTata.setAttribute("class", "productList");
   headingTata.innerText = "Tata 1mg Health Products";
@@ -1227,7 +1225,7 @@ crossorigin="anonymous"
   var tataBox = document.createElement("div");
   tataBox.setAttribute("Id", "tataBox");
 
-  console.log(featureBrand);
+  // console.log(featureBrand);
   tataMg.map(function (elem, index, array) {
     var box = document.createElement("div");
     var img = document.createElement("img");
@@ -1253,7 +1251,7 @@ crossorigin="anonymous"
 <script>
 
 
-  console.log(greenSupplements);
+  // console.log(greenSupplements);
   var headingGreen = document.createElement("p");
   headingGreen.setAttribute("class", "productList");
   headingGreen.innerText = "Green Supplements | Supplement of the Week";
@@ -1263,7 +1261,7 @@ crossorigin="anonymous"
   var greenBox = document.createElement("div");
   greenBox.setAttribute("Id", "greenBox");
 
-  console.log(featureBrand);
+  // console.log(featureBrand);
   greenSupplements.map(function (elem, index, array) {
     var box = document.createElement("div");
     var img = document.createElement("img");
@@ -1288,4 +1286,34 @@ crossorigin="anonymous"
   {
     window.location.href="feature.html"
   }
+
+  var user = JSON.parse(localStorage.getItem("userdata"))||[];
+  
+  if(user.length==0){
+    var log = document.createElement("a")
+    log.setAttribute("href","login.html")
+    log.setAttribute("class","logandsign")
+    log.innerText="Login  | "
+    // <a href="login.html" class="logandsign">Login  |</a>
+    var sign = document.createElement("a")
+    sign.setAttribute("href","signUp.html")
+    sign.setAttribute("class","logandsign")
+    sign.innerText="Sign Up"
+    // var sign = <a href="signUp.html" class="logandsign">Sign Up</a>
+    document.getElementById("user").append(log,sign);                           
+  }
+
+  if(user.length!=0)
+  {
+    var logout = document.createElement("a")
+    logout.addEventListener("click",function(){
+      localStorage.removeItem("userdata");
+      document.location.reload()
+    })
+    logout.setAttribute("class","logandsign")
+    logout.innerText="  Log OUt"
+    document.querySelector("#user").innerText= "Hi User"
+    document.querySelector("#user").append(logout)
+  }
+
 </script>
