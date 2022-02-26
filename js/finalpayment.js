@@ -1,8 +1,7 @@
-document.querySelector("#form").addEventListener("submit", pay);
+document.querySelector(".paymentmake").addEventListener("click", pay);
 var carddetails = JSON.parse(localStorage.getItem("carddetails"));
 
-function pay(event) {
-  event.preventDefault();
+function pay() {
   var card_num = document.querySelector("#cardnum").value;
   var month = document.querySelector("#month").value;
   var year = document.querySelector("#year").value;

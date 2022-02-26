@@ -3,11 +3,10 @@ var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 function display(cartdata) {
   document.getElementById("container").innerText = "";
   cartdata.map(function (elem, index) {
-    
     var childDiv = document.createElement("div");
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
-    var name = document.createElement("h4");
+    var name = document.createElement("div");
     name.innerText = elem.name;
     var price = document.createElement("p");
     price.innerText = 1 * elem.price * (elem.quantity * 1);
@@ -15,32 +14,44 @@ function display(cartdata) {
     qntydiv.setAttribute("id", "innerdiv");
     var qtyno = document.createElement("p");
     qtyno.innerText = elem.quantity;
-    var btn = document.createElement("button");
+    var btn = document.createElement("img");
     btn.addEventListener("click", function () {
       increaseqnty(index);
     });
-    btn.innerText = "+";
-
-    var btn2 = document.createElement("button");
+    btn.setAttribute("src","https://www.1mg.com/images/plus-cart.svg")
+    var btn2 = document.createElement("img");
     btn2.addEventListener("click", function () {
       decreaseqnty(index);
     });
-    btn2.innerText = "-";
+    btn2.setAttribute("src","https://www.1mg.com/images/minus-cart.svg")
 
-    qntydiv.append(btn, qtyno, btn2);
+    var btn_div1 = document.createElement("div")
+    var btn_div2 = document.createElement("div")
+
+    btn_div1.append(btn)
+    btn_div2.append(btn2)
+
+    qntydiv.append(btn_div1, qtyno, btn_div2);
 
     childDiv.append(img, name, price, qntydiv);
     document.querySelector("#container").append(childDiv);
+    
   });
 }
 
 display(cartdata);
 
+var total = cartdata.reduce(function (acc, data) {
+  return acc + data.price * data.quantity;
+}, 0);
+
 function showtotal() {
   var total = cartdata.reduce(function (acc, data) {
     return acc + data.price * data.quantity;
   }, 0);
-  document.querySelector("#total").innerText = total;
+  document.querySelector("#total").innerText = "₹"+total;
+  var taxtotal = total+18/100*total;
+  document.querySelector("#ordertotal").innerText = "₹"+ taxtotal
 }
 
 function items_no() {
@@ -53,10 +64,12 @@ var count = 0;
 function promocode() {
   var inputpromo = document.querySelector("#inputpromo").value;
   if (inputpromo == "masai30" && count==0) {
-    var total = Number(document.querySelector("#total").innerText);
+    // var total = Number(document.querySelector("#total").innerText);
     var promototal = total-30/100*total;
+    
     count++;
-    document.querySelector("#total").innerText = promototal
+    document.querySelector("#ordertotal").innerText = "₹"+ promototal
+    document.querySelector("#discount").innerText = "-30%"
     display(cartdata);
   }
   else if(count>0){
@@ -79,7 +92,7 @@ items_no();
 document.querySelector("#checkout_btn").addEventListener("click",checkout)
 
 function checkout() {
-  window.location.href="payment.html"
+  window.location.href="address.html"
 }
 
 function increaseqnty(index) {
@@ -103,3 +116,5 @@ function decreaseqnty(index) {
   showtotal();
   items_no();
 }
+
+
