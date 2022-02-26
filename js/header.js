@@ -17,7 +17,6 @@ function covid_page() {
 function ayurveda_page() {
   window.location.href = "Ayurveda.html";
 }
-
 function care_plan_page() {
   window.location.href = "feature.html";
 }
