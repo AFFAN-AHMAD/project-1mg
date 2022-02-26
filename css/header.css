@@ -101,6 +101,7 @@ body {
 }
 
 .navbar1 {
+  margin: auto;
   height: fit-content;
   display: flex;
   box-sizing: border-box;
