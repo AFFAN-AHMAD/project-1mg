@@ -46,11 +46,11 @@
     }
 
     .Ashwagandha{
+      margin: auto;
         height:200px;
-        width:280px;
+        width:100%;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        
     }
 
     body{
@@ -59,12 +59,30 @@
 
     .istcontainer{
         display:flex;
-        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         justify-content:space-evenly;
     }
 
+    .istcontainer > div {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 30px 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    }
+
+    .istcontainer > div > p {
+      font-size: 12px;
+      opacity: .87;
+      margin: 5px 10px; 
+    }
+
+
     .istcontainer>div:hover{
-        box-shadow: inherit;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
     }
 
     .navbar11{
