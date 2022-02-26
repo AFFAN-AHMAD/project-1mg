@@ -8,8 +8,8 @@ body {
   margin: auto;
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(1, 100%);
-  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
   /* border: red solid; */
 }
 
@@ -26,18 +26,26 @@ img {
 
 p {
   text-align: center;
-  width: 100px;
 }
 
 #container > div {
   display: grid;
   width: 100%;
+  box-sizing: border-box;
   margin: auto;
-  grid-template-columns: repeat(4, auto);
-  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: 100px; */
+  padding: 0 10px;
+  background-color: white;
   align-items: center;
   border-radius: 10px;
+  text-overflow: ellipsis;
+}
+
+#container > div > * {
   overflow: hidden;
+  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
 }
 
 #cartname {
@@ -52,32 +60,94 @@ p {
 }
 
 #innerdiv {
-  display: flex;
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: repeat(3,30px);
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* border: red solid; */
+  box-sizing: border-box;
+}
+
+#innerdiv > div {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  /* border: red solid; */
+  box-sizing: border-box;
+}
+
+
+#innerdiv > div > img {
+  margin: auto;
+  height: 30px;
+  align-items: center;
+  /* border:1px red solid; */
+  color: #ffffff;
   text-align: center;
 }
 
+#innerdiv > div~div > button {
+  background-color: white;
+  border:1px #ff6f61 solid;
+  color: #FF6F61;
+}
+
+
 #checkoutdiv {
-  margin-top: 50px;
-  position: fixed;
+  margin-top: 8px;
   width: 100%;
   top: 100;
   bottom: 0;
   display: flex;
   padding: 10px;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
+  /* border: red solid; */
+}
+
+#container > div > img {
+  height: 85%;
 }
 
 #container > div:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-button {
+#checkout_btn {
+  /* height: ; */
+  width: 130px;
+  text-align: center;
   border-radius: 5px;
   font-size: medium;
   border: 0px;
+}
+
+#apply_promo_btn {
+  height:  34px !important;
+  width: 200px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#inputpromo {
+  width: 100%;
+  font-size: 14px;
+  /* line-height: 21px; */
+  /* padding: 6px 30px 7px 0; */
+  border: none;
+  outline: 0;
+  bottom: 19px;
+  color: #3e3e3e;
+  text-indent: 12px;
+  height: 34px;
+  border-radius: 0 3px 3px 0;
+  background-color: #f1f4f6;
+  display: inline;
 }
 
 #navbar {
@@ -131,7 +201,7 @@ button {
   /* border: red solid; */
 }
 
-#searchbarinfo {
+.searchbarinfo {
   width: 100%;
   font-size: 14px;
   line-height: 21px;
@@ -179,12 +249,13 @@ button {
 }
 
 #list {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  /* width: 100%;
+  height: 50px; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
   align-items: center;
+  text-align: center;
   color: #ff6f61;
   background-color: #ffffff;
   border-radius: 10px;

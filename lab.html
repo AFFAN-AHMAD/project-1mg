@@ -98,13 +98,12 @@
         </div>
     </div>
     <div id="loginSignup">
-        <div>
-            <a href="login.html" class="logandsign">Login</a> |
-            <a href="signUp.html" class="logandsign">Sign Up</a>
-        </div>
+      <div id="user">
+      </div>
         <div>Offers</div>
         <div class="cart_icon" onclick="cart_page()">
-            <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/24/000000/external-shopping-cart-finance-dreamstale-lineal-dreamstale-3.png" /><span class="count">0</span>
+            <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/24/000000/external-shopping-cart-finance-dreamstale-lineal-dreamstale-3.png" />
+            <span class="count">0</span>
         </div>
         <div style="font-size: 14px">Need Help ?</div>
     </div>
@@ -887,6 +886,7 @@
       elem.quantity = 1
      labdata.push(elem)
      localStorage.setItem("cartdata",JSON.stringify(labdata))
+     count();
     })
         var img = document.createElement("img");
         img.setAttribute("src", elem.image_url);
@@ -923,4 +923,54 @@
         labBox.append(box);
     });
     document.querySelector("#mainCont").append(headbar, labBox);
+
+    count();
+  function count() {
+    if(labdata.length!=0){
+    document.querySelector(".count").innerText=labdata.length
+     }
+  }
+</script>
+
+<script>
+     function mainpage()
+  {
+    window.location.href="feature.html"
+  }
+
+  var user = JSON.parse(localStorage.getItem("userdata"))||[];
+  count();
+  if(user.length==0){
+    var log = document.createElement("a")
+    log.setAttribute("href","login.html")
+    log.setAttribute("class","logandsign")
+    log.innerText="Login  | "
+    // <a href="login.html" class="logandsign">Login  |</a>
+    var sign = document.createElement("a")
+    sign.setAttribute("href","signUp.html")
+    sign.setAttribute("class","logandsign")
+    sign.innerText="Sign Up"
+    // var sign = <a href="signUp.html" class="logandsign">Sign Up</a>
+    document.getElementById("user").append(log,sign);                           
+  }
+
+  if(user.length!=0)
+  {
+    var logout = document.createElement("a")
+    logout.addEventListener("click",function(){
+      localStorage.removeItem("userdata");
+      document.location.reload()
+    })
+    logout.setAttribute("class","logandsign")
+    logout.style.marginLeft="10px"
+    logout.innerText="LogOUT"
+
+    var e = "";
+    for(var i=0;i<8;i++)
+    {
+      e += user[0].email[i];
+    }
+    document.querySelector("#user").innerText= "Hi "+e
+    document.querySelector("#user").append(logout)
+  }
 </script>

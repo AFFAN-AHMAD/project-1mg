@@ -1013,6 +1013,7 @@ crossorigin="anonymous"
       elem.quantity = 1
      labdata.push(elem)
      localStorage.setItem("cartdata",JSON.stringify(labdata))
+     count();
     })
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
@@ -1043,7 +1044,6 @@ crossorigin="anonymous"
     rating.append(pricebox,off)
     box.append( nameContainer,imgContainer,rating);
     console.log(box);
-
     labBox.append(box);
   });
   document.querySelector("#mainCont").append(headbar, labBox);
@@ -1082,6 +1082,16 @@ crossorigin="anonymous"
     featurebox.append(box);
   });
   document.querySelector("#mainCont").append(headbar, featurebox);
+
+  count();
+  function count() {
+    
+    if(labdata.length!=0){
+    document.querySelector(".count").innerText=labdata.length
+     }
+  }
+
+
 </script>
 <!--  topsellers-->
 <script>

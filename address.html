@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | 1mg</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css\adress.css" />
+  </head>
+
+  <body>
+    <div id="navbar">
+      <div class="nav_1st_innder_div">
+        <div
+          itemscope=""
+          itemtype="http://schema.org/Organization"
+          class="com_logo"
+        >
+          <img
+            src="https://www.1mg.com/images/tata_1mg_logo.svg"
+            alt="1mg, best e pharmacy in India"
+            title="1mg, India's Largest Healthcare Platform"
+            width="124"
+            height="35"
+          />
+        </div>
+        <div class="search_bar">
+          <div class="search_bar_innerdiv">
+            <input
+              id="searchbarinfo"
+              type="text"
+              autocomplete="off"
+              name="name"
+              data-auto-search-bar="true"
+              class="styles__search-input___3I6VS"
+              value=""
+              placeholder="Search for Medicines and Health Products"
+            />
+            <div class="search_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="help_link">
+        <div class="help_link_innerdiv">
+          <a href="/help" class="help_link_anc"><span>Need Help?</span></a>
+        </div>
+      </div>
+    </div>
+    <div id="maindiv">
+      <div class="container">
+        <div class="middle">
+          <div><div class="address">Address</div></div>
+          <div class="inpaddress">
+            <textarea
+              type="text"
+              class="flat"
+              placeholder="Flat Number,Building Name,Street/Locality"
+              id="flatno"
+              value=""
+            ></textarea>
+          </div>
+          <div class="landmark">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Landmark (optional)"
+              id="landmarkno"
+            />
+          </div>
+          <div class="pincode">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Pincode"
+              id="Pincodeno"
+            />
+          </div>
+          <div class="locality">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Locality"
+              id="localityno"
+            />
+          </div>
+          <div class="city">
+            <input type="text" class="flat" placeholder="City" id="cityno" />
+          </div>
+          <div class="state">
+            <input type="text" class="flat" placeholder="State" id="stateno" />
+          </div>
+          <div class="customer">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Customer Name"
+              id="custname"
+            />
+          </div>
+          <div class="digit">
+            <input
+              type="text"
+              class="flat"
+              placeholder="10 digit Mobile Number"
+              id="custmobile"
+            />
+          </div>
+          <div class="option">
+            <input
+              type="radio"
+              id="Home"
+              name="Home"
+              value="Home"
+              style="margin-right: -70px"
+              value="1"
+              onclick="function focus(){this.focus()}"
+              onblur="function focus(){this.blur()}"
+            />
+            <label for="Home">Home</label>
+            <input
+              type="radio"
+              id="Office"
+              name="Office"
+              value="Office"
+              style="margin-right: -70px"
+              value="2"
+              onclick="function focus(){this.active(true)}"
+              onblur="function focus(){this.active(false)}"
+            />
+            <label for="Office">Office</label>
+            <input
+              type="radio"
+              id="Other"
+              name="Other"
+              value="Other"
+              style="margin-right: -70px"
+              value="3"
+              onclick="function focus(){this.active(true)}"
+              onblur="function focus(){this.active(false)}"
+            />
+            <label for="Other">Other</label>
+          </div>
+          <div class="below">
+            <div class="save">
+              <div class="continue_btn" onclick="save()">SAVE</div>
+            </div>
+            <div class="cancel">
+              <div class="continue_btn" onclick="returntocart()">CANCEL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="add">
+        <div class="address" style="margin-left: 18%">Saved Address</div>
+        <div id="youradd">No Address Found</div>
+        <div class="continue_btn" id="con_id">Continue</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var addarr = JSON.parse(localStorage.getItem("address")) || [];
+  var adddata = JSON.parse(localStorage.getItem("address")) || [];
+
+  function save() {
+    var FlatNo = document.querySelector("#flatno");
+    var landmark = document.querySelector("#landmarkno");
+    var Pincodeno = document.querySelector("#Pincodeno");
+    var locality = document.querySelector("#localityno");
+    var cityno = document.querySelector("#cityno");
+    var stateno = document.querySelector("#stateno");
+    var custname = document.querySelector("#custname");
+    var custmobile = document.querySelector("#custmobile");
+
+    var addobj = {
+      FlatNo: FlatNo.value,
+      landmark: landmark.value,
+      Pincodeno: Pincodeno.value,
+      locality: locality.value,
+      cityno: cityno.value,
+      stateno: stateno.value,
+    };
+    addarr.push(addobj);
+    localStorage.setItem("address", JSON.stringify(addarr));
+    var adddata = JSON.parse(localStorage.getItem("address")) || [];
+    display(adddata);
+  }
+
+  function display(adddata, index) {
+    document.querySelector("#youradd").innerText = "";
+    adddata.map(function (elem) {
+      var maindiv = document.createElement("div");
+      maindiv.setAttribute("id", "inner_main_div");
+
+      var add_div = document.createElement("div");
+      var inputdiv = document.createElement("div");
+      var input = document.createElement("input");
+      input.setAttribute("type", "radio");
+      input.setAttribute("id", "choose");
+      inputdiv.append(input);
+      input.addEventListener("focus", function () {
+        document
+          .querySelector("#con_id")
+          .addEventListener("click", function () {
+            window.location.href = "finalpayment.html";
+          });
+      });
+
+      var icon_div = document.createElement("div");
+      var trash = document.createElement("img");
+      trash.setAttribute(
+        "src",
+        "https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/20/000000/external-trash-essentials-tanah-basah-basic-outline-tanah-basah-3.png"
+      );
+      var edit = document.createElement("img");
+      edit.setAttribute(
+        "src",
+        "https://img.icons8.com/external-ios-line-2px-amoghdesign/20/000000/external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png"
+      );
+      icon_div.append(trash, edit);
+      icon_div.setAttribute("id", "icon_div");
+
+      trash.addEventListener("click", function () {
+        adddata.splice(index, 1);
+        addarr.splice(index, 1);
+        localStorage.setItem("address", JSON.stringify(adddata));
+        display(adddata);
+      });
+
+      var FlatNo = document.createElement("div");
+      FlatNo.innerText = elem.FlatNo;
+
+      var cityno = document.createElement("div");
+      cityno.innerText = elem.cityno;
+
+      var stateno = document.createElement("div");
+      stateno.innerText = elem.stateno;
+
+      add_div.append(FlatNo, cityno, stateno);
+      maindiv.append(inputdiv, add_div, icon_div);
+      document.querySelector("#youradd").append(maindiv);
+    });
+  }
+
+  display(adddata);
+
+  document.querySelector("#Home").addEventListener("blur", function () {
+    location.reload();
+  });
+
+  document.querySelector("#Office").addEventListener("blur", function () {
+    location.reload();
+  });
+
+  document.querySelector("#Other").addEventListener("blur", function () {
+    location.reload();
+  });
+
+  function returntocart() {
+    window.location.href = "feature.html";
+    localStorage.removeItem("addressuser");
+  }
+
+  document.querySelector(".com_logo").addEventListener("click", function () {
+    window.location.href = "feature.html";
+  });
+</script>
+
+<script src="js\header.js"></script>
