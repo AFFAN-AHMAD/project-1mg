@@ -1,29 +1,29 @@
 function mainpage() {
-  window.location.href = "feature.html";
+  window.location.href = "../feature.html";
 }
 
 function lab_test_page() {
-  window.location.href = "lab.html";
+  window.location.href = "../lab.html";
 }
 
 function ask_doc_page() {
-  window.location.href = "AskDoctor.html";
+  window.location.href = "../AskDoctor.html";
 }
 
 function covid_page() {
-  window.location.href = "feature.html";
+  window.location.href = "../feature.html";
 }
 
 function ayurveda_page() {
-  window.location.href = "feature.html";
+  window.location.href = "Ayurveda.html";
 }
 
 function care_plan_page() {
-  window.location.href = "feature.html";
+  window.location.href = "../feature.html";
 }
 
 function cart_page() {
-  window.location.href = "Cart.html";
+  window.location.href = "../Cart.html";
 }
 
 var user = JSON.parse(localStorage.getItem("userdata"))||[];
