@@ -1332,6 +1332,7 @@ crossorigin="anonymous"
     var logout = document.createElement("a")
     logout.addEventListener("click",function(){
       localStorage.removeItem("userdata");
+      localStorage.removeItem("cartdata");
       document.location.reload()
     })
     logout.setAttribute("class","logandsign")

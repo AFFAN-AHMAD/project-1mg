@@ -9,7 +9,7 @@ function display(cartdata) {
     var name = document.createElement("div");
     name.innerText = elem.name;
     var price = document.createElement("p");
-    price.innerText = 1 * elem.price * (elem.quantity * 1);
+    price.innerText ="₹" + 1 * elem.price * (elem.quantity * 1);
     var qntydiv = document.createElement("div");
     qntydiv.setAttribute("id", "innerdiv");
     var qtyno = document.createElement("p");
@@ -61,12 +61,14 @@ function items_no() {
 
 document.getElementById("apply_promo_btn").addEventListener("click", promocode);
 var count = 0;
+var countarr = [];
 function promocode() {
   var inputpromo = document.querySelector("#inputpromo").value;
   if (inputpromo == "masai30" && count==0) {
     // var total = Number(document.querySelector("#total").innerText);
     var promototal = total-30/100*total;
-    
+    countarr.push(1);
+    localStorage.setItem("count",JSON.stringify(countarr))
     count++;
     document.querySelector("#ordertotal").innerText = "₹"+ promototal
     document.querySelector("#discount").innerText = "-30%"
