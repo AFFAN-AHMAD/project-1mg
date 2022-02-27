@@ -59,7 +59,12 @@ sorter.addEventListener("change", sortitems);
 
 function sortitems() {
     // console.log("sort")
-    if (sorter.value == "htl") {
+    if (sorter.value == "sort") {
+
+      window.location.href="../shop.html"
+        display(productdata);
+    } 
+    else if (sorter.value == "htl") {
         productdata.sort(function(a, b) {
             return b.price - a.price;
         });
