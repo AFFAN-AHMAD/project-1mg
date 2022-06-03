@@ -15,5 +15,5 @@ function loginsubmit(event) {
       break;
     }
   }
-  window.location.href = "./index.html"
+  window.location.href = "feature.html"
 }

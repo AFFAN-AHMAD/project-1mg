@@ -70,7 +70,7 @@ function promocode() {
     countarr.push(1);
     localStorage.setItem("count",JSON.stringify(countarr))
     count++;
-    document.querySelector("#ordertotal").innerText = "₹"+ Math.floor(promototal)
+    document.querySelector("#ordertotal").innerText = "₹"+ promototal
     document.querySelector("#discount").innerText = "-30%"
     display(cartdata);
   }

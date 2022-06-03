@@ -1,5 +1,5 @@
 function mainpage() {
-  window.location.href = "index.html";
+  window.location.href = "feature.html";
 }
 
 function lab_test_page() {
@@ -11,14 +11,14 @@ function ask_doc_page() {
 }
 
 function covid_page() {
-  window.location.href = "index.html";
+  window.location.href = "feature.html";
 }
 
 function ayurveda_page() {
   window.location.href = "Ayurveda.html";
 }
 function care_plan_page() {
-  window.location.href = "index.html";
+  window.location.href = "feature.html";
 }
 
 function cart_page() {
