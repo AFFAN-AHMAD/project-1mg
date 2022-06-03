@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Pharmacy India | Buy Medicines from India's Trusted Medicine Store: 1mg.com</title>
+    <link rel="stylesheet" href="./css/database.css" />
+
+    <link rel="stylesheet" href="css\footer.css">
+    <link
+    rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+    type="image/x-icon"
+  />
+
+    <link rel="stylesheet" href="AskDocCSS\header.css" />
+    <link rel="stylesheet" href="css\header.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  height: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  
+}
+.numbertext+img{
+  height:170px;
+  /* width:500px */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+
+<script
+src="https://kit.fontawesome.com/eb21f449ee.js"
+crossorigin="anonymous"
+></script>
+  </head>
+  <!-- <hr> -->
+    <div class="navbar" style="margin:auto">
+        <div class="navbarlogo_tabs">
+          <div id="logo" onclick="mainpage()">
+            <img
+              src="https://www.1mg.com/images/tata_1mg_logo.svg"
+              alt="TATA 1mg"
+              class="logo_img"
+            />
+          </div>
+          <div id="tabs">
+            <div onclick="mainpage()">MEDICINES</div>
+            <div onclick="lab_test_page()">
+              LAB TESTS
+              <div class="reddiv">SAFE</div>
+            </div>
+            <div onclick="ask_doc_page()">ASK DOCTOR</div>
+            <div onclick="covid_page()">COVID-19</div>
+            <div onclick="ayurveda_page()">AYURVEDA</div>
+            <div onclick="care_plan_page()">
+              CARE PLAN
+              <div class="reddiv">SAVE MORE</div>
+            </div>
+          </div>
+        </div>
+        <div id="loginSignup">
+          <div id="user">
+          </div>
+          <div>Offers</div>
+          <div class="cart_icon" onclick="cart_page()">
+            <img
+              src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/24/000000/external-shopping-cart-finance-dreamstale-lineal-dreamstale-3.png"
+            /><span class="count">0</span>
+          </div>
+          <div style="font-size: 14px">Need Help ?</div>
+        </div>
+      </div>
+      <div class="navbar1">
+        <div class="navbar_inner_div">
+          <div class="location_bar_innerdiv">
+            <div>
+              <i class="material-icons location_icon" style="font-size: 16px"
+                >&#xe0c8;</i
+              >
+              <input
+               class="searchbarinfo"
+                type="text"
+                autocomplete="off"
+                name="name"
+                data-auto-search-bar="true"
+                class="styles__search-input___3I6VS"
+                value=""
+                placeholder="Enter Your City"
+                style="font-weight: 700"
+              />
+              <i class="material-icons location_icon" style="font-size: 16px"
+                >my_location</i
+              >
+            </div>
+          </div>
+          <div class="search_bar">
+            <div class="search_bar_innerdiv">
+              <input
+               class="searchbarinfo"
+                type="text"
+                autocomplete="off"
+                name="name"
+                data-auto-search-bar="true"
+                class="styles__search-input___3I6VS"
+                value=""
+                placeholder="Search for Medicines and Health Products"
+                id="search_bar_of_products"
+              />
+  
+              <div class="search_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar_2nd_part">
+          <div class="spark_img">
+            <img
+              src="https://res.cloudinary.com/du8msdgbj/image/upload/v1570695364/quick_buy_rebrand_lqpnce.svg"
+              alt=""
+            />
+          </div>
+          <div class="navbar_discount">QUICK BUY! Flat 25% off on medicines*</div>
+          <div class="upload_btn">
+            <a
+              class="upload_anc"
+              href="google.com"
+              data-auto-upload-prescription="true"
+              ><span>Upload</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="dropdown_div">
+        <ul>
+          <li>
+            <a href="#"
+              >Health Resource Center<i
+                class="fa-solid fa-angle-down dropdown_icon"
+              ></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container1">
+                <div class="notborder">
+                  <li><a href="#">All Diseases</a></li>
+                  <li><a href="#">All Medicines</a></li>
+                  <li><a href="#">Medicines by Therapeutic Class</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Covid Essentials
+              <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container1">
+                <div class="notborder">
+                  <li><a href="#">Covid-19 Self test kits</a></li>
+                  <li><a href="#">Oxygen Cans & Concentrators</a></li>
+                  <li><a href="#">Masks</a></li>
+                  <li><a href="#">Sanitizers & Handwash Products</a></li>
+                  <li><a href="#">Boost Your Immunity</a></li>
+                  <li><a href="#">Thermometer</a></li>
+                  <li><a href="#">Chyawanprash</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Featured <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container1">
+                <div class="notborder">
+                  <li><a href="#">Winter Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Hair & Scalp Care</a>
+                    <a href="#">Cough & Cold</a>
+                    <a href="#">Fever & Headache</a>
+                    <a href="#">Vaporizers & Nebulizers</a>
+                    <a href="#">Heating Aid</a><a href="#">Winter Combos</a>
+                  </li>
+                  <li><a href="#">Tata 1mg Health Products</a></li>
+                  <li><a href="#">Trending Products</a></li>
+                  <li><a href="#">New Arrivals on Tata 1MG</a></li>
+                </div>
+                <div>
+                  <li><a href="#">Buy More, Save More</a></li>
+                  <li><a href="#">Vaccination</a></li>
+                  <li><a href="#">Minimum 33% Off</a></li>
+                  <li><a href="#">Combos</a></li>
+                  <li><a href="#">Deals of the Day</a></li>
+                  <li><a href="#">Top Brands</a></li>
+                  <li class="innerli">
+                    <a href="#">Accu-Chek</a>
+                    <a href="#">Ensure</a>
+                    <a href="#">Revital</a>
+                    <a href="#">Optimum Nutrition (ON)</a>
+                    <a href="#">Dr. Morepen</a>
+                    <a href="#">Pediasure</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Products <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container1">
+                <div class="notborder">
+                  <li><a href="#">Vitamins & Supplements</a></li>
+                  <li class="innerli">
+                    <a href="#">Multivitamins</a>
+                    <a href="#">Vitamins A-Z</a>
+                    <a href="#">Mineral Supplements</a>
+                  </li>
+                  <li><a href="#">Nutritional Drinks</a></li>
+                  <li class="innerli">
+                    <a href="#">Adult Daily Nutrition</a>
+                    <a href="#">Kids Nutrition (2-15 Yrs)</a>
+                    <a href="#">For Women</a>
+                  </li>
+                  <li><a href="#">Health Food & Drinks</a></li>
+                  <li class="innerli">
+                    <a href="#">Green Tea & Herbal Tea</a>
+                    <a href="#">Apple Cider Vinegar</a>
+                    <a href="#">Healthy Snacks</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Protein Supplements</a></li>
+                  <li class="innerli">
+                    <a href="#">Whey Protein</a>
+                    <a href="#">Amino Acids</a>
+                    <a href="#">Mass Gainers</a>
+                    <a href="#">Workout Essential</a>
+                    <a href="#">Fat Burners</a>
+                  </li>
+                  <li><a href="#">Omega & Fish Oil</a></li>
+                  <li class="innerli">
+                    <a href="#">Fish Oil</a>
+                    <a href="#">Cod Liver Oil</a>
+                    <a href="#">Flax Seed Oil</a>
+                  </li>
+                  <li><a href="#">Immunity Boosters</a></li>
+                  <li class="innerli">
+                    <a href="#">Chyawanprasha</a>
+                    <a href="#">Vitamin C</a>
+                    <a href="#">Herbal Teas</a>
+                    <a href="#">Antioxidant Supplements</a>
+                    <a href="#">Ayurvedic Supplements</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Specialty Supplements</a></li>
+                  <li class="innerli">
+                    <a href="#">Green Supplements</a>
+                    <a href="#">Beauty Supplements</a>
+                    <a href="#">Pre and Probiotics</a>
+                    <a href="#">Glucosamine</a>
+                    <a href="#">Collagen</a>
+                    <a href="#">Antioxidants</a>
+                    <a href="#">Biotin</a>
+                  </li>
+                  <li><a href="#">Weight Management</a></li>
+                  <li class="innerli">
+                    <a href="#">Weight Management Herbs</a>
+                    <a href="#">Meal Replacements</a>
+                    <a href="#">Weight Gain</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Diabetes <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container1">
+                <div class="notborder">
+                  <li><a href="#">Devices</a></li>
+                  <li class="innerli">
+                    <a href="#">Blood Glucose Monitors</a>
+                    <a href="#">Test Strips & Lancets</a>
+                    <a href="#">Syringes & Pens</a>
+                  </li>
+                  <li><a href="#">Diabetic Medicines</a></li>
+                  <li class="innerli">
+                    <a href="#">Vitamins, Minerals & Antioxidants</a>
+                    <a href="#">Homeopathy Medicines</a>
+                    <a href="#">Ayurvedic Medicines</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Sugar Substitutes</a></li>
+                  <li><a href="#">Diabetic Diet</a></li>
+                  <li class="innerli">
+                    <a href="#">Juices & Vinegars</a>
+                    <a href="#">Superfoods</a>
+                  </li>
+                  <li><a href="#">Diabetic Foot Health</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Healthcare Devices
+              <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container2">
+                <div class="notborder">
+                  <li><a href="#">Masks (N95, Surgical and more)</a></li>
+                  <li class="innerli">
+                    <a href="#">Face Shield</a>
+                    <a href="#">Surgical Masks</a>
+                    <a href="#">N95 Masks</a>
+                  </li>
+                  <li><a href="#">Oxygen Concentrators & Cans</a></li>
+                  <li><a href="#">BP Monitors</a></li>
+                  <li><a href="#">Nebulizers & Vaporizers</a></li>
+                  <li><a href="#">Oximeters & Pedometers</a></li>
+                  <li><a href="#">Vital Signs Monitors & Wearables</a></li>
+                  <li><a href="#">Weighing Scales</a></li>
+                </div>
+                <div>
+                  <li><a href="#">Thermometers</a></li>
+                  <li class="innerli">
+                    <a href="#">IR Thermometers</a>
+                  </li>
+                  <li><a href="#">Body Massager</a></li>
+  
+                  <li><a href="#">Diabetes Monitors</a></li>
+                  <li><a href="#">Mobility Equipments</a></li>
+                  <li><a href="#">Exercise Equipments</a></li>
+                  <li><a href="#">Doctor's Corner</a></li>
+                  <li class="innerli">
+                    <a href="#">Stethoscopes</a>
+                    <a href="#">Tapes & Bandages</a>
+                    <a href="#">Clinical Diagnostic Equipments</a>
+                    <a href="#">Dressings & Wound Care</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Supports & Braces</a></li>
+                  <li class="innerli">
+                    <a href="#">Neck & Shoulder Suppor</a>
+                    <a href="#">Knee & Leg Support</a>
+                    <a href="#">Back & Abdomen Support</a>
+                    <a href="#">Ankle & Foot Support</a>
+                    <a href="#">Hand & Wrist Braces</a>
+                    <a href="#">Arm & Elbow Support</a>
+                    <a href="#">Cervical Pillows</a>
+                    <a href="#">Compression support & sleeves</a>
+                    <a href="#">Heel support</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Personal Care <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container2">
+                <div class="notborder">
+                  <li><a href="#">Sexual Wellness</a></li>
+                  <li class="innerli">
+                    <a href="#">Condoms</a>
+                    <a href="#">Lubricants & Massage Gels</a>
+                    <a href="#">Personal body massagers</a>
+                    <a href="#">Men Performance Enhancers</a>
+                    <a href="#">Sexual Health Supplements</a>
+                  </li>
+                  <li><a href="#">Skin Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Body Lotions</a>
+                    <a href="#">Mosquito Repellents</a>
+                    <a href="#">Lip Balm</a>
+                    <a href="#">Acne Care</a>
+                    <a href="#">Bath Essentials</a>
+                    <a href="#">Facewash</a>
+                    <a href="#">Sanitizers & Handwash</a>
+                    <a href="#">Sunscreen Products</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Baby Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Baby & Infant Food</a>
+                    <a href="#">Baby Diapers, wipes & more</a>
+                    <a href="#">Nursing & Feeding</a>
+                    <a href="#">Baby Bath Essentials</a>
+                    <a href="#">Baby Skin Care</a>
+                    <a href="#">Baby Healthcare</a>
+                    <a href="#">Baby Oral Health</a>
+                  </li>
+                  <li><a href="#">Hair Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Shampoo</a>
+                    <a href="#">Hair Conditioners</a>
+                    <a href="#">Hair Growth Supplements</a>
+                    <a href="#">Hair Oils</a>
+                    <a href="#">Hair Growth for Men</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Elderly Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Adult Diapers</a>
+                    <a href="#">Bone & Joint Health</a>
+                    <a href="#">Living & Safety Aids</a>
+                    <a href="#">Orthopaedic Supports</a>
+                  </li>
+                  <li><a href="#">Women Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Feminine Hygiene</a>
+                    <a href="#">Women Care Supplements</a>
+                    <a href="#">Mother Care</a>
+                    <a href="#">Menopause</a>
+                    <a href="#">Polycystic Ovary Syndrome</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Men Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Men Grooming</a>
+                  </li>
+                  <li><a href="#">Oral Care</a></li>
+                  <li><a href="#">Pet Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Pet Grooming</a>
+                    <a href="#">Pet Food</a>
+                    <a href="#">Pet Health Care</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Health Conditions
+              <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container2">
+                <div class="notborder">
+                  <li><a href="#">Stomach Care</a></li>
+                  <li><a href="#">Heart Care</a></li>
+                  <li><a href="#">Bone, Joint & Muscle Care</a></li>
+                  <li><a href="#">Pain Relief</a></li>
+                  <li class="innerli">
+                    <a href="#">Heating Aids</a>
+                  </li>
+                  <li><a href="#">Eye Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Eye Lubricants</a>
+                  </li>
+                  <li><a href="#">Ear Care</a></li>
+                  <li class="innerli">
+                    <a href="#">Hearing Aid Devices</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">First Aid</a></li>
+                  <li><a href="#">Liver Care</a></li>
+                  <li><a href="#">Cold & Cough</a></li>
+                  <li><a href="#">Fever</a></li>
+                  <li><a href="#">Mental Wellness</a></li>
+                  <li><a href="#">Kidney Care</a></li>
+                  <li><a href="#">Respiratory Care</a></li>
+                  <li><a href="#">Piles, Fissures & Fistula</a></li>
+                  <li><a href="#">Smoking Cessation</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Ayurveda Products
+              <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container2">
+                <div class="notborder">
+                  <li><a href="#">Ayurveda Top Brands</a></li>
+                  <li class="innerli">
+                    <a href="#">Dabur</a>
+                    <a href="#">Sri Sri Tattva</a>
+                    <a href="#">Baidyanath Products</a>
+                    <a href="#">Kerala Ayurveda</a>
+                    <a href="#">Jiva Ayurveda</a>
+                    <a href="#">Tata 1mg Herbal Supplements</a>
+                    <a href="#">Patanjali</a>
+                  </li>
+                  <li><a href="#">Popular categories</a></li>
+                  <li class="innerli">
+                    <a href="#">Herbal Juice</a>
+                    <a href="#">Herbal Juice</a>
+                    <a href="#">Ayurveda Personal Care</a>
+                    <a href="#">Ayurvedic Immunity Boosters</a>
+                    <a href="#">Explore Popular Herbs</a>
+                    <a href="#">Herbal Supplements</a>
+                  </li>
+                </div>
+                <div>
+                  <li><a href="#">Top Health Concerns</a></li>
+                  <li class="innerli">
+                    <a href="#">Ayurvedic Respiratory care</a>
+                    <a href="#">Cough, Cold & Fever</a>
+                    <a href="#">Sexual Wellness</a>
+                    <a href="#">Bone, Joint and Muscle Care</a>
+                    <a href="#">Stomach Care</a>
+                    <a href="#">Diabetes Care</a>
+                    <a href="#">Liver Care</a>
+                    <a href="#">Mind Care</a>
+                    <a href="#">Cardiac Care</a>
+                  </li>
+                  <li><a href="#">Unani Medicines</a></li>
+                  <li class="innerli">
+                    <a href="#">Hamdard Unani</a>
+                    <a href="#">AMU Dawakhana</a>
+                    <a href="#">Rex Remedies</a>
+                    <a href="#">Dehlvi Remedies</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              >Homeopathy <i class="fa-solid fa-angle-down dropdown_icon"></i
+            ></a>
+            <ul class="dropdown">
+              <div class="container2">
+                <div class="notborder">
+                  <li><a href="#">Homeopathy Top Brands</a></li>
+                  <li class="innerli">
+                    <a href="#">SBL Homoeopathy</a>
+                    <a href="#">Dr Reckeweg</a>
+                    <a href="#">Dr Willmar Schwabe India</a>
+                    <a href="#">Adel Pekana</a>
+                    <a href="#">BJAIN Homeopathy</a>
+                    <a href="#">Bakson's</a>
+                    <a href="#">Allen</a>
+                    <a href="#">Wheezal</a>
+                    <a href="#">Dr Willmar Schwabe Germany</a>
+                    <a href="#">Haslab</a>
+                    <a href="#">Medisynth</a>
+                    <a href="#">Boiron</a>
+                    <a href="#">Bhandari</a>
+                    <a href="#">Dr Bakshi Bakson</a>
+                    <a href="#">Dr Batra's</a>
+                  </li>
+                  <li><a href="#">Homeopathy Wellness Combos</a></li>
+                </div>
+                <div>
+                  <li><a href="#">Homeopathy Popular Categories</a></li>
+                  <li class="innerli">
+                    <a href="#">Homeopathic Care for Cold & Cough</a>
+                    <a href="#">Respiratory Wellness</a>
+                    <a href="#">Homeopathy Covid Essentials</a>
+                    <a href="#">Sexual Health</a>
+                    <a href="#">Hair Care Products</a>
+                    <a href="#">Skin Care Products</a>
+                    <a href="#">Children's Health</a>
+                    <a href="#">Women's Health</a>
+                  </li>
+                  <li><a href="#">Homeopathy Medicines</a></li>
+                  <li class="innerli">
+                    <a href="#">Homeopathic Drops</a>
+                    <a href="#">Dilutions</a>
+                    <a href="#">Mother Tinctures</a>
+                    <a href="#">Trituration</a>
+                    <a href="#">Bio Combinations</a>
+                    <a href="#">Millesimal LM Potencies</a>
+                    <a href="#">Biochemics</a>
+                    <a href="#">Bach Flower Remedies</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="https://freedesignfile.com/upload/2018/08/peanut-butter-poster-template-vector-01.jpg" style="width:100%;height: max-content;">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="https://m.media-amazon.com/images/S/aplus-media/vc/42f751f8-8381-43a6-ae64-5be0a026fb6a.__CR0,0,970,300_PT0_SX970_V1___.jpg" style="width:100%;height: max-content;">
+            <div class="text"></div>
+        </div>
+
+        <!-- <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://sellglobal.ebay.in/seller-center/wp-content/uploads/2021/11/ebay-banner-2.webp" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div> -->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+</div>
+  
+
+    <div id="mainCont"></div>
+    <div id = "border"></div>
+    <div id ="summary">
+      <p id = "summaryHead"> Stay Healthy with Tata 1mg: Your Favourite Online Pharmacy and Healthcare Platform</p>
+      <p class="contenHead">We Bring Care to Health.</p >
+      <p class="content"> Tata 1mg is India's leading digital healthcare platform. From doctor consultations on chat to online pharmacy and lab tests at home: we have it all covered for you. Having delivered over 25 million orders in 1000+ cities till date, we are on a mission to bring "care" to "health" to give you a flawless healthcare experience.</p>
+      <p class="contenHead">Tata 1mg: Your Favourite Online Pharmacy!</p>
+      <p class="content"> Tata 1mg is India's leading online chemist with over 2 lakh medicines available at the best prices. We are your one-stop destination for other healthcare products as well, such as over the counter pharmaceuticals, healthcare devices and homeopathy and ayurveda medicines.
+      <p class="content">  With Tata 1mg, you can buy medicines online and get them delivered at your doorstep anywhere in India! But, is ordering medicines online a difficult process? Not at all! Simply search for the products you want to buy, add to cart and checkout. Now all you need to do is sit back as we get your order delivered to you.</p>
+      <p class="content">  In case you need assistance, just give us a call and we will help you complete your order.</p>
+      <p class="content"> Don't want to go through the hassle of adding each medicine separately? You can simply upload your prescription and we will place your order for you. And there is more! At Tata 1mg, you can buy health products and medicines online at best discounts. </p>
+      <p class="content">    Now, isn't that easy? Why go all the way to the medicine store and wait in line, when you have Tata 1mg Pharmacy at your service.</p>
+       
+
+       
+
+     
+      </p>
+      <p class="contenHead"> The Feathers in Our Cap</p>
+      <p class="content">At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India. We set out on our journey in 2015, and have come a long way since then. Along the way, we have been conferred with prestigious titles like <span class="highlight">BML Munjal Award for 'Business Excellence through Learning and Development', Best Online Pharmacy in India </span> and Top 50 venture in The Smart CEO-Startup50 India. We have been selected as the only company from across the globe for <span class="highlight">SD#3 "Health & Well Being for all" by Unreasonable group, US State Department.</span> In 2019 alone we received three awards including <span class="highlight">the BMW Simply Unstoppable Award.</span></p>
+      <p class="contenHead">The Services We Offer</p>
+      <p class="content">Tata 1mg is India's leading digital healthcare platform, where you can buy medicines online with discount. Buy medicine online in Delhi, Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai, Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering your online medicine order at your doorstep, we provide accurate, authoritative & trustworthy information on medicines and help people use their medicines effectively and safely.</p>
+      <p class="content"> We also facilitate lab tests at home. You can avail over 2,000 tests and get tested by 120+ top and verified labs at the best prices. Need to consult a doctor? On our platform, you can talk to over 20 kinds of specialists in just a few clicks.</p>
+      <p class="content"> Customer centricity is the core of our values. Our team of highly trained and experienced doctors, phlebotomists and pharmacists looks into each order to give you a fulfilling experience.</p>
+      <p class="content">Visit our online medical store now, and avail online medicine purchase at a discount.</p>
+      <p class="content">Stay Healthy!</p>
+       
+        
+       
+    </div>
+    <hr style= "height:1px; background-color:#eaeaea";></hr>
+    <footer id="footer-bar" class="footer">
+
+
+      <div class="top-bar">
+          <div class="top-head">
+              <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
+          </div>
+          <div class="flex-box stats-bar">
+              <div>
+                  <div class="stats-num">160m+</div>
+                  <div class="stats-text">Visitors</div>
+              </div>
+              <div>
+                  <div class="stats-num">27m+</div>
+                  <div class="stats-text">Orders Delivered</div>
+              </div>
+              <div>
+                  <div class="stats-num">1800+</div>
+                  <div class="stats-text">Cities</div>
+              </div>
+          </div>
+          <div class="border-btm"></div>
+
+
+          <div class="flex-box down-bar">
+              <div class="free-text">Get the link to download App</div>
+              <div class="input-box">
+                  <form><input type="tel" id="phoneNumber" class="input-phone" placeholder="Enter Phone Number" maxLength="10" autoComplete="off" value="" pattern="[6-9]\d{9}" title="Please enter valid 10 digits" required="" />
+                      <button type="submit" class="s-button">Send Link</button>
+                  </form>
+              </div>
+
+          </div>
+      </div>
+
+      <!-- <div class="border-btm"></div> -->
+      <!-- <hr> -->
+
+
+
+      <div class="flex-box link-bar">
+          <div class="main-content">
+              <div>
+                  <h3>Know Us</h3>
+                  <ul>
+                      <li><a href="https://www.1mg.com/aboutUs "><span>About Us</span></a></li>
+                      <li><a href="https://www.1mg.com/contactUs"><span>Contact Us</span></a></li>
+                      <li><a href="https://www.1mg.com/press-coverage "><span>Press Coverage</span></a></li>
+                      <li><a href="https://1mg.darwinbox.in/ms/candidate/careers"><span>Careers</span></a></li>
+                      <li><a href="https://partners.1mg.com "><span>Business Partnership</span></a></li>
+                      <li><a href="https://www.1mg.com/healthpartner "><span>Become a Health Partner</span></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="main-content ">
+              <div>
+                  <h3>Our Policies</h3>
+                  <ul>
+                      <li><a href="https://www.1mg.com/PrivacyPolicy"><span>Privacy Policy</span></a></li>
+                      <li><a href="https://www.1mg.com/Tnc"><span>Terms and Conditions </span></a></li>
+                      <li><a href="https://www.1mg.com/editorial-policy-processes"><span>Editorial Policy</span></a></li>
+                      <li><a href="https://www.1mg.com/return-policy"><span>Return Policy</span></a></li>
+                      <li><a href="https://www.1mg.com/ip-policy"><span>IP Policy</span></a></li>
+                      <li><a href="https://www.1mg.com/grievance-redressal-policy"><span>Grievance Redressal Policy</span></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="main-content ">
+              <div>
+                  <h3>Our Services</h3>
+                  <ul>
+                      <li><a href="https://www.1mg.com/"><span>Order Medicines</span></a></li>
+                      <li><a href="https://www.1mg.com/labs"><span>Book Lab Tests</span></a></li>
+                      <li><a href="https://www.1mg.com/online-doctor-consultation"><span>Consult a Doctor</span></a></li>
+                      <li><a href="https://www.1mg.com/ayurveda"><span>Ayurveda Articles</span></a></li>
+                      <li><a href="https://www.1mg.com/hi/patanjali?utm_source=ayurvedahome&utm_medium=bannner"><span>Hindi Articles</span></a></li>
+                      <li><a href="https://www.1mg.com/subscription-plan/subscriptions"><span>Care Plan</span></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="main-content ">
+              <div>
+                  <h3>Connect</h3>
+                  <ul>
+                      <li><span class="s-head ">Social Links</span></li>
+                      <li class="m-web ">
+                          <a href="https://www.facebook.com/1mgOfficial " alt="Facebook " rel="nofollow " target="_blank ">
+                              <div class="facebook "></div>
+                          </a>
+                          <a href="https://twitter.com/1mgofficial " alt="Twitter " rel="nofollow " target="_blank ">
+                              <div class="twitter "></div>
+                          </a>
+                          <a href="https://www.youtube.com/c/1mgofficial " alt="You Tube " rel="nofollow " target="_blank ">
+                              <div class="youtube "></div>
+                          </a>
+                          <a href="https://www.linkedin.com/company/1mg " alt="Linkedin " rel="nofollow " target="_blank ">
+                              <div class="linkedin "></div>
+                          </a>
+                          <a href="https://medium.com/1mgofficial " alt="Medium Link " rel="nofollow " target="_blank ">
+                              <div class="medium "></div>
+                          </a>
+                      </li>
+                      <li><span class="grey-txt">Want daily dose of health?</span></li>
+                      <li><button class="s-button">SIGN UP</button></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="main-content ">
+              <div>
+                  <h5>Download App</h5>
+                  <ul>
+                      <li>
+                          <a href="https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus ">
+                              <div class="google_play styl ">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYS_EZ7w-HFYVdL4V2urilnX2f1PjHGd_pA&usqp=CAU/" alt="">
+                              </div>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://itunes.apple.com/in/app/1mg/id554578419?mt=8 ">
+                              <div class="apple_store "><img src="" alt=""></div>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="border-btm"></div> -->
+
+
+      <div class="auth-bar">
+          <div class="auth-cont">
+              <div class="reliable "></div>
+              <div class="details-wrapper">
+                  <h5 class="f18">Reliable</h5>
+                  <p class="f12 grey-txt">All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+              </div>
+          </div>
+          <div class="auth-cont">
+              <div class="secure "></div>
+              <div class="details-wrapper">
+                  <h5 class="f18">Secure</h5>
+                  <p class="f12 grey-txt">Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+              </div>
+          </div>
+          <div class="auth-cont">
+              <div class="affordable "></div>
+              <div class="details-wrapper">
+                  <h5 class="f18">Affordable</h5>
+                  <p class="f12 grey-txt">Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="trust-bar">
+          <div class="trust-stamps">
+              <div class="legitscript legitscript">
+                  <div>
+                      <script src="https://static.legitscript.com/seals/729605.js "></script>
+                  </div>
+              </div>
+              <div class="legitscript">
+                  <div class="image-container">
+                      <div class=" "></div>
+                  </div>
+              </div>
+          </div>
+          <div class="free-text bold">India&#x27;s only LegitScript and ISO/ IEC 27001 certified online healthcare platform</div>
+      </div>
+
+
+
+
+      <div class="collapse">
+          <div class="f-head">
+              <h2 class="know-text">
+                  <!-- -->Know more about Tata 1mg<span class="collapse"><span><img src="https://img.1mg.com/images/down-arrowRebrand.svg " alt="downArrow "/></span></span>
+              </h2>
+          </div>
+          <div class="hide-desc show-disc">
+              <div></div>
+              <div>
+                  <article>
+                      <h3>Access medical and health information</h3>
+                      <p class="f14">Tata 1mg provides you with medical information which is curated, written and verified by experts, accurate and trustworthy. Our experts create high-quality content about medicines, diseases, lab investigations, Over-The-Counter
+                          (OTC) health products, Ayurvedic herbs/ingredients, and alternative remedies.</p>
+                  </article>
+              </div>
+              <div>
+                  <article>
+                      <h3>Order medicines online</h3>
+                      <p class="f14">Get free medicine home delivery in over 1800 cities across India. You can also order Ayurvedic, Homeopathic and other Over-The-Counter (OTC) health products. Your safety is our top priority. All products displayed on Tata 1mg are
+                          procured from verified and licensed pharmacies.</p>
+                  </article>
+              </div>
+              <div>
+                  <article>
+                      <h3>Book lab tests</h3>
+                      <p class="f14">Book any lab tests and preventive health packages from certified labs and get tested from the comfort of your home. Enjoy free home sample collection, view reports online and consult a doctor online for free.</p>
+                  </article>
+              </div>
+              <div>
+                  <article>
+                      <h3>Consult a doctor online</h3>
+                      <p class="f14">Got a health query? Consult doctors online from the comfort of your home for free. Chat privately with our registered medical specialists to connect directly with verified doctors. Your privacy is guaranteed.</p>
+                  </article>
+              </div>
+          </div>
+      </div>
+      <div class="flex-box grey-txt ">
+          <div>
+              <div class="copyright">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don&#x27;t process requests for Schedule X and other habit forming drugs.</div>
+          </div>
+          <div class="payment "></div>
+      </div>
+  </footer>
+
+
+    
+  </body>
+</html>
+<script src="./database/feauturedBrand.js"></script>
+<script src="./database/grandsaving.js"></script>
+<script src="./database/greensupplements.js"></script>
+<script src="./database/popular.js"></script>
+<script src="./database/tata_mg.js"></script>
+<script src="./database/topSellers.js"></script>
+<script src="./js/header.js"></script>
+<script src = "./js/slider.js"></script>
+<script src="./database/labdata.js"></script>
+<script src ="./js/Cart.js"></script>
+<!-- featurebrand-->
+<script>
+  var labdata =JSON.parse(localStorage.getItem("cartdata"))||[]
+  // health checkup
+  var headingLab = document.createElement("p");
+  headingLab.setAttribute("class", "productList");
+  headingLab.innerText = "Full body health checkups";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingLab)
+  var labBox = document.createElement("div");
+  labBox.setAttribute("Id", "labBox");
+
+  labarr.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    box.addEventListener("click",function()
+    {
+      elem.quantity = 1
+     labdata.push(elem)
+     localStorage.setItem("cartdata",JSON.stringify(labdata))
+     count();
+    })
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var img2 = document.createElement("img");
+    img2.setAttribute("src", elem.image2_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    name.style.fontSize="17px"
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img,img2)
+    nameContainer.append(name)
+    var rating = document.createElement("div")
+    rating.setAttribute("Id","ratebox")
+    var mrp  = document.createElement("s")
+    mrp.innerText = elem.mrp
+    mrp.style.fontSize="12px"
+    var price = document.createElement("span")
+    price.innerText="₹"+elem.price
+    var off = document.createElement("div")
+    off.innerHTML=elem.off
+    var pricebox = document.createElement("div")
+    pricebox.setAttribute("Id","pricebox")
+    pricebox.append("₹ ",mrp,price,)
+    off.setAttribute("id","offbox")
+    rating.append(pricebox,off)
+    box.append( nameContainer,imgContainer,rating);
+    console.log(box);
+    labBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, labBox);
+  // var featureBrand=JSON.parse(localStorage.getItem("featurebrands"))
+  var headingfeature = document.createElement("p");
+
+  headingfeature.setAttribute("class","productList")
+  headingfeature.innerText="Featured Brands"
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingfeature)
+  var featurebox = document.createElement("div")
+  featurebox.setAttribute("Id","featurebox")
+
+  featureBrand.map(function (elem, index, array) {
+
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    var imgContainer = document.createElement("div");
+    imgContainer.setAttribute("class", "imgContainer");
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class", "nameContainer");
+
+    name.innerHTML = elem.name;
+    imgContainer.append(img);
+
+
+    nameContainer.append(name);
+
+    box.append(imgContainer, nameContainer);
+    console.log(box);
+
+    featurebox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, featurebox);
+
+  count();
+  function count() {
+    
+    if(labdata.length!=0){
+    document.querySelector(".count").innerText=labdata.length
+     }
+  }
+
+
+</script>
+<!--  topsellers-->
+<script>
+
+  
+
+  var headingtop = document.createElement("p");
+  headingtop.setAttribute("class", "productList");
+  headingtop.innerText = "Top Sellers From MuscleBlaze";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingtop)
+  console.log(Muscleblaze);
+  var topBox = document.createElement("div");
+  topBox.setAttribute("Id", "topBox");
+  console.log(featureBrand);
+  Muscleblaze.map(function (elem, index, array) {
+
+    var box = document.createElement("div");
+    
+    var imgContainer = document.createElement("div")
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class","nameContainer")
+
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    imgContainer.append(img);
+    nameContainer.append(name);
+
+    var desc =document.createElement("p");
+    desc.innerText=elem.desc
+
+    var ratediv = document.createElement("div");
+    ratediv.setAttribute("Id","rateDiv")
+   
+   ratediv.setAttribute("ID","ratediv")
+    var mrptag = document.createElement("p")
+    mrptag.innerText = "MRP"
+    mrptag.style.fontSize="12px"
+    var mrp  = document.createElement("s")
+    
+    mrp.innerText = elem.mrp
+    
+    var discount = document.createElement("p")
+    discount.innerText=elem.off+" "+"off"
+    discount.style.color="#1aab2a"
+    discount.style.fontWeight="bold"
+    ratediv.append(mrptag,mrp , discount)
+    var price = document.createElement("h5")
+    price.innerText="₹"+elem.price
+    box.append(imgContainer, nameContainer,desc,ratediv,price);
+    console.log(box);
+
+    topBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, topBox);
+  topBox.addEventListener("click",function()
+  {
+    window.location.href="shop.html"
+  })
+</script>
+
+<!-- popular -->
+<script>
+    
+    
+
+  // console.log(popularBrand);
+  var headingpopular = document.createElement("p");
+  headingpopular.setAttribute("class", "productList");
+  headingpopular.innerText = "Popular Categories";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingpopular)
+  console.log(Muscleblaze);
+  var popularBox = document.createElement("div");
+  popularBox.setAttribute("Id", "popularBox");
+
+  // console.log(featureBrand);
+  popularBrand.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    box.setAttribute("class","box")
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    var imgContainer = document.createElement("div");
+    imgContainer.setAttribute("class", "imgContainer");
+    var nameContainer = document.createElement("div");
+    nameContainer.setAttribute("class", "nameContainer");
+
+    
+    imgContainer.append(img);
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
+    console.log(box);
+
+    popularBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, popularBox);
+</script>
+<!-- grandsaving-->
+<script>
+
+
+  // console.log(grandSavings);
+  var headingGrand = document.createElement("p");
+  headingGrand.setAttribute("class", "productList");
+  headingGrand.innerText = "Grand Saving Days";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingGrand)
+  var GrandBox = document.createElement("div");
+  GrandBox.setAttribute("Id", "GrandBox");
+
+  // console.log(featureBrand);
+  grandSavings.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
+    console.log(box);
+
+    GrandBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, GrandBox);
+</script>
+<!-- tatamg -->
+<script>
+
+
+  // console.log(tataMg);
+  var headingTata = document.createElement("p");
+  headingTata.setAttribute("class", "productList");
+  headingTata.innerText = "Tata 1mg Health Products";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingTata)
+  var tataBox = document.createElement("div");
+  tataBox.setAttribute("Id", "tataBox");
+
+  // console.log(featureBrand);
+  tataMg.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
+
+    console.log(box);
+
+    tataBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, tataBox);
+</script>
+
+<!-- greensupplement -->
+<script>
+
+
+  // console.log(greenSupplements);
+  var headingGreen = document.createElement("p");
+  headingGreen.setAttribute("class", "productList");
+  headingGreen.innerText = "Green Supplements | Supplement of the Week";
+  var headbar = document.createElement("div")
+  headbar.setAttribute("class","headbar")
+  headbar.append(headingGreen)
+  var greenBox = document.createElement("div");
+  greenBox.setAttribute("Id", "greenBox");
+
+  // console.log(featureBrand);
+  greenSupplements.map(function (elem, index, array) {
+    var box = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+    var name = document.createElement("p");
+    name.innerHTML = elem.name;
+    var imgContainer=document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer")
+    var nameContainer = document.createElement("div")
+    nameContainer.setAttribute("class","nameContainer")
+    imgContainer.append(img)
+    nameContainer.append(name)
+    box.append(imgContainer, nameContainer);
+    console.log(box);
+
+    greenBox.append(box);
+  });
+  document.querySelector("#mainCont").append(headbar, greenBox);
+  // /sliding script
+  
+  function mainpage()
+  {
+    window.location.href="feature.html"
+  }
+
+  var user = JSON.parse(localStorage.getItem("userdata"))||[];
+  
+  if(user.length==0){
+    var log = document.createElement("a")
+    log.setAttribute("href","login.html")
+    log.setAttribute("class","logandsign")
+    log.innerText="Login  | "
+    // <a href="login.html" class="logandsign">Login  |</a>
+    var sign = document.createElement("a")
+    sign.setAttribute("href","signUp.html")
+    sign.setAttribute("class","logandsign")
+    sign.innerText="Sign Up"
+    // var sign = <a href="signUp.html" class="logandsign">Sign Up</a>
+    document.getElementById("user").append(log,sign);                           
+  }
+
+  if(user.length!=0)
+  {
+    var logout = document.createElement("a")
+    logout.addEventListener("click",function(){
+      localStorage.removeItem("userdata");
+      localStorage.removeItem("cartdata");
+      document.location.reload()
+    })
+    logout.setAttribute("class","logandsign")
+    logout.style.marginLeft="10px"
+    logout.innerText="LogOut"
+
+    var e = "";
+    for(var i=0;i<8;i++)
+    {
+      e += user[0].email[i];
+    }
+    document.querySelector("#user").innerText= "Hi "+e
+    document.querySelector("#user").append(logout)
+  }
+
+</script>
