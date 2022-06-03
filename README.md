@@ -26,7 +26,7 @@
 
 
 
-## Homepage
+<!-- ## Homepage
 ![Tata1mg-HomePage](https://user-images.githubusercontent.com/74173626/167311801-ec9942ea-3b0e-4d46-b3a0-3cacacd7b7b4.png)
 
 ## Login page
@@ -64,7 +64,7 @@
 
 ## Payment page
 ![Tata1mgPaymentPage](https://user-images.githubusercontent.com/74173626/167362134-020c6503-164f-4d03-b3e3-ac48997c67ea.jpeg)
-
+ -->
 
 ## Developers
 
