@@ -9,7 +9,7 @@ function display(cartdata) {
     var name = document.createElement("div");
     name.innerText = elem.name;
     var price = document.createElement("p");
-    price.innerText ="₹" + 1 * elem.price * (elem.quantity * 1);
+    price.innerText = "₹" + 1 * elem.price * (elem.quantity * 1);
     var qntydiv = document.createElement("div");
     qntydiv.setAttribute("id", "innerdiv");
     var qtyno = document.createElement("p");
@@ -18,12 +18,12 @@ function display(cartdata) {
     btn.addEventListener("click", function () {
       increaseqnty(index);
     });
-    btn.setAttribute("src","https://www.1mg.com/images/plus-cart.svg")
+    btn.setAttribute("src", "https://www.1mg.com/images/plus-cart.svg")
     var btn2 = document.createElement("img");
     btn2.addEventListener("click", function () {
       decreaseqnty(index);
     });
-    btn2.setAttribute("src","https://www.1mg.com/images/minus-cart.svg")
+    btn2.setAttribute("src", "https://www.1mg.com/images/minus-cart.svg")
 
     var btn_div1 = document.createElement("div")
     var btn_div2 = document.createElement("div")
@@ -35,7 +35,7 @@ function display(cartdata) {
 
     childDiv.append(img, name, price, qntydiv);
     document.querySelector("#container").append(childDiv);
-    
+
   });
 }
 
@@ -49,9 +49,9 @@ function showtotal() {
   var total = cartdata.reduce(function (acc, data) {
     return acc + data.price * data.quantity;
   }, 0);
-  document.querySelector("#total").innerText = "₹"+total;
-  var taxtotal = total+18/100*total;
-  document.querySelector("#ordertotal").innerText = "₹"+ taxtotal
+  document.querySelector("#total").innerText = "₹" + total;
+  var taxtotal = total + 18 / 100 * total;
+  document.querySelector("#ordertotal").innerText = "₹" + taxtotal
 }
 
 function items_no() {
@@ -64,20 +64,20 @@ var count = 0;
 var countarr = [];
 function promocode() {
   var inputpromo = document.querySelector("#inputpromo").value;
-  if (inputpromo == "masai30" && count==0) {
+  if (inputpromo == "masai30" && count == 0) {
     // var total = Number(document.querySelector("#total").innerText);
-    var promototal = total-30/100*total;
+    var promototal = total - 30 / 100 * total;
     countarr.push(1);
-    localStorage.setItem("count",JSON.stringify(countarr))
+    localStorage.setItem("count", JSON.stringify(countarr))
     count++;
-    document.querySelector("#ordertotal").innerText = "₹"+ promototal
+    document.querySelector("#ordertotal").innerText = "₹" + promototal
     document.querySelector("#discount").innerText = "-30%"
     display(cartdata);
   }
-  else if(count>0){
+  else if (count > 0) {
     alert("Promocode Is Already Used");
   }
-  else{
+  else {
     alert("Invalid Promocode")
   }
 }
@@ -91,10 +91,10 @@ items_no();
 //   window.location.href = "Shop.html";
 // }
 
-document.querySelector("#checkout_btn").addEventListener("click",checkout)
+document.querySelector("#checkout_btn").addEventListener("click", checkout)
 
 function checkout() {
-  window.location.href="address.html"
+  window.location.href = "address.html"
 }
 
 function increaseqnty(index) {
