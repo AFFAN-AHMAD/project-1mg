@@ -5,7 +5,7 @@
 
 ## 🔗Deployed Link
 
-[https://precious-biscotti-be61c5.netlify.app/feature.html](https://precious-biscotti-be61c5.netlify.app/feature.html)
+https://tata1mg-lyart.vercel.app/feature.html
 
 # Tech Stack used
 
