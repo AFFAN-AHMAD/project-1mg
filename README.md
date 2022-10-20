@@ -5,7 +5,7 @@
 
 ## 🔗Deployed Link
 
-https://tata1mg-lyart.vercel.app/feature.html
+https://tata1mgcloned.netlify.app/feature.html
 
 # Tech Stack used
 
